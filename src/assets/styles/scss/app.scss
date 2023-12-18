@@ -1,0 +1,59 @@
+@charset 'UTF-8';
+
+// 1. Configuration
+@import
+  'abstracts/variables',
+  'abstracts/mixins';
+
+// 2. Vendors
+@import
+  'vendor/bootstrap-breakpoints',
+  'vendor/normalize',
+  'vendor/swiper';
+
+// 3. Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography';
+
+// 4. Helpers and utility classes
+@import
+  'helpers/other',
+  'helpers/color',
+  'helpers/text',
+  'helpers/image',
+  'helpers/layout',
+  'helpers/form',
+  'helpers/container',
+  'helpers/icon-variables',
+  'helpers/icons',
+  'helpers/padding-margin',
+  'helpers/appearance';
+
+// 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/footer',
+  'layout/menu';
+
+// 5. Components
+@import
+  'components/breadcrumb',
+  'components/button',
+  'components/banner',
+  'components/dropdowns',
+  'components/swipers',
+  'components/checkbox',
+  'components/details',
+  'components/form-base',
+  'components/notification',
+  'components/slider-base';
+
+// 6. Page-specific styles
+@import
+  'pages/home',
+  'pages/about',
+  'pages/projects',
+  'pages/products',
+  'pages/roof';

@@ -1,0 +1,21 @@
+.menu {
+  > * {
+    &::after {
+      content: "";
+      @apply bg-secondary block w-0 h-[9px] absolute bottom-[-33px] left-0;
+      transition: width 0.3s ease, height 0.3s ease;
+    }
+    &:hover {
+      &::after {
+        @apply w-full;
+      }
+    }
+    &.active {
+      @apply text-primary;
+      &::after {
+        content: "";
+        @apply bg-secondary block w-full h-[9px] absolute bottom-[-33px] left-0;
+      }
+    }
+  }
+}

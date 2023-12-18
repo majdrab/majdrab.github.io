@@ -1,0 +1,52 @@
+.animated-ellipse {
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  padding-bottom: 0%;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+
+  div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 85%;
+    border-radius: 50%;
+  }
+
+  + span {
+    position: relative;
+  }
+
+  &.explode {
+    animation: explode 0.5s ease-in-out forwards;
+  }
+
+  &.deplode {
+    animation: deplode 0.5s ease-in-out forwards;
+  }
+}
+@keyframes explode {
+  0% {
+    width: 0%;
+    padding-bottom: 0%;
+  }
+  100% {
+    width: 250%;
+    padding-bottom: 250%;
+  }
+}
+@keyframes deplode {
+  0% {
+    width: 250%;
+    padding-bottom: 250%;
+  }
+  100% {
+    width: 0%;
+    padding-bottom: 0%;
+  }
+}

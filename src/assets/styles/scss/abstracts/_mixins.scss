@@ -1,0 +1,237 @@
+/* Container main */
+
+// X Y padding
+
+@mixin container-padding {
+  @each $breakpoint, $py, $px, $px-inner in $container-paddings {
+    @include breakpoint-up($breakpoint) {
+      padding-top: $py;
+      padding-bottom: $py;
+      padding-left: $px;
+      padding-right: $px;
+    }
+  }
+}
+
+// X padding
+
+@mixin container-padding-x {
+  @each $breakpoint, $py, $px, $px-inner in $container-paddings {
+    @include breakpoint-up($breakpoint) {
+      padding-left: $px;
+      padding-right: $px;
+    }
+  }
+}
+
+// X padding half
+
+@mixin container-padding-x-half {
+  @each $breakpoint, $py, $px, $px-inner in $container-paddings {
+    @include breakpoint-up($breakpoint) {
+      padding-left: calc(#{$px} /2);
+      padding-right: calc(#{$px} /2);
+    }
+  }
+}
+
+// Y padding
+
+@mixin container-padding-y {
+  @each $breakpoint, $py, $px, $px-inner in $container-paddings {
+    @include breakpoint-up($breakpoint) {
+      padding-top: $py;
+      padding-bottom: $py;
+    }
+  }
+}
+
+// Y padding half
+
+@mixin container-padding-y {
+  @each $breakpoint, $py, $px, $px-inner in $container-paddings {
+    @include breakpoint-up($breakpoint) {
+      padding-top: calc(#{$py} /2);
+      padding-bottom: calc(#{$py} /2);
+    }
+  }
+}
+
+// Top padding
+
+@mixin container-padding-top {
+  @each $breakpoint, $py, $px, $px-inner in $container-paddings {
+    @include breakpoint-up($breakpoint) {
+      padding-top: $py;
+    }
+  }
+}
+
+// Bottom padding
+
+@mixin container-padding-bottom {
+  @each $breakpoint, $py, $px, $px-inner in $container-paddings {
+    @include breakpoint-up($breakpoint) {
+      padding-bottom: $py;
+    }
+  }
+}
+
+/* Container inner  */
+
+// X padding
+
+@mixin container-inner-padding-x {
+  @each $breakpoint, $py, $px, $px-inner in $container-paddings {
+    @include breakpoint-up($breakpoint) {
+      padding-left: $px-inner;
+      padding-right: $px-inner;
+    }
+  }
+}
+
+// Left padding
+
+@mixin container-inner-padding-left {
+  @each $breakpoint, $py, $px, $px-inner in $container-paddings {
+    @include breakpoint-up($breakpoint) {
+      padding-left: $px-inner;
+      padding-right: 0;
+    }
+  }
+}
+
+// Right padding
+
+@mixin container-inner-padding-right {
+  @each $breakpoint, $py, $px, $px-inner in $container-paddings {
+    @include breakpoint-up($breakpoint) {
+      padding-left: 0;
+      padding-right: $px-inner;
+    }
+  }
+}
+
+/* Container mixed  */
+
+// X padding
+
+@mixin container-mixed-padding-x {
+  @each $breakpoint, $py, $px, $px-inner in $container-paddings {
+    @include breakpoint-up($breakpoint) {
+      padding-left: $px + $px-inner;
+      padding-right: $px + $px-inner;
+    }
+  }
+}
+
+/* Container with 0 padding on < SM */
+
+// X padding
+
+@mixin container-padding-x-fill-sm {
+  @each $breakpoint, $py, $px, $px-inner in $container-paddings {
+    @if $breakpoint == xxs {
+      @include breakpoint-up($breakpoint) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    } @else if $breakpoint == xs {
+      @include breakpoint-up($breakpoint) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    } @else {
+      @include breakpoint-up($breakpoint) {
+        padding-left: $px;
+        padding-right: $px;
+      }
+    }
+  }
+}
+
+/* Container with 0 padding on < LG */
+
+// X padding
+
+@mixin container-padding-x-fill-lg {
+  @each $breakpoint, $py, $px, $px-inner in $container-paddings {
+    @if $breakpoint == xxs {
+      @include breakpoint-up($breakpoint) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    } @else if $breakpoint == xs {
+      @include breakpoint-up($breakpoint) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    } @else if $breakpoint == sm {
+      @include breakpoint-up($breakpoint) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    } @else if $breakpoint == md {
+      @include breakpoint-up($breakpoint) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    } @else {
+      @include breakpoint-up($breakpoint) {
+        padding-left: $px;
+        padding-right: $px;
+      }
+    }
+  }
+}
+
+/* Header height */
+
+@mixin header-height {
+  @each $breakpoint, $height in $header-heights {
+    @include breakpoint-up($breakpoint) {
+      height: $height;
+    }
+  }
+}
+
+/* Fonts */
+
+@mixin font-s {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  @include breakpoint-up(md) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  @include breakpoint-up(xxl) {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@mixin font-m {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  @include breakpoint-up(md) {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  @include breakpoint-up(xxl) {
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+  }
+}
+
+@mixin font-l {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  @include breakpoint-up(md) {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  @include breakpoint-up(xxl) {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}

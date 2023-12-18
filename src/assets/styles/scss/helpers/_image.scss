@@ -1,0 +1,32 @@
+.contain {
+  object-fit: contain;
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.icon {
+  object-fit: contain;
+  width: 40px;
+  &.icon-small {
+    width: 20px;
+  }
+  &.icon-mid {
+    width: 30px;
+  }
+}
+
+.icon-flex {
+  object-fit: contain;
+  flex: 0 0 40px;
+  width: 40px;
+  &.icon-small {
+    flex: 0 0 20px;
+    width: 20px;
+  }
+  &.icon-mid {
+    flex: 0 0 30px;
+    width: 30px;
+  }
+}

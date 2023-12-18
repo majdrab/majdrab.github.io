@@ -1,0 +1,34 @@
+body {
+  @apply flex flex-col justify-between min-h-screen bg-gray-bg;
+}
+
+a {
+  @media (hover: hover) {
+    color: currentColor;
+  }
+}
+
+input {
+  @apply border-none outline-none bg-transparent;
+}
+
+:root {
+  --container-max-width: 1200px;
+  --gap: 0.5rem;
+  --padding-px: 24px;
+
+  @media (min-width: theme('screens.md')) {
+    --gap: 1.5rem;
+  }
+
+  @media (min-width: theme('screens.xl')) {
+    --gap: 2rem;
+  }
+
+  @each $key, $value in (theme('screens.xs'), theme('screens.sm'), theme('screens.md'), theme('screens.lg'), theme('screens.xl')), (32px, 46px, 70px, 100px, 120px)
+  {
+    @media (min-width: $(key)) {
+      --padding-px: $(value);
+    }
+  }
+}

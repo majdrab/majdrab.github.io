@@ -1,0 +1,31 @@
+.checkbox {
+  input {
+    &:checked + label {
+      svg {
+        path {
+          transition: stroke-dashoffset 0.15s 0.1s ease;
+          stroke-dashoffset: 0;
+        }
+      }
+
+      .faux-checkbox {
+        @apply !bg-primary border-primary;
+      }
+    }
+  }
+}
+
+.checkbox-holder {
+  .faux-checkbox {
+    border-radius: 5px;
+  }
+  svg {
+    margin-bottom: 1px;
+    path {
+      transition: stroke-dashoffset 0.15s ease;
+      stroke: currentColor;
+      stroke-dasharray: 20;
+      stroke-dashoffset: 20;
+    }
+  }
+}

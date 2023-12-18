@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'TT-Commons-400';
+  src: url('@/assets/fonts/TT-Commons-400.eot');
+  src: url('@/assets/fonts/TT-Commons-400.eot?#iefix') format('embedded-opentype'),
+       url('@/assets/fonts/TT-Commons-400.ttf') format('truetype'),
+       url('@/assets/fonts/TT-Commons-400.woff') format('woff'),
+       url('@/assets/fonts/TT-Commons-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'TT-Commons-500';
+  src: url('@/assets/fonts/TT-Commons-500.eot');
+  src: url('@/assets/fonts/TT-Commons-500.eot?#iefix') format('embedded-opentype'),
+       url('@/assets/fonts/TT-Commons-500.ttf') format('truetype'),
+       url('@/assets/fonts/TT-Commons-500.woff') format('woff'),
+       url('@/assets/fonts/TT-Commons-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'TT-Commons-600';
+  src: url('@/assets/fonts/TT-Commons-600.eot');
+  src: url('@/assets/fonts/TT-Commons-600.eot?#iefix') format('embedded-opentype'),
+       url('@/assets/fonts/TT-Commons-600.ttf') format('truetype'),
+       url('@/assets/fonts/TT-Commons-600.woff') format('woff'),
+       url('@/assets/fonts/TT-Commons-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'TT-Commons-700';
+  src: url('@/assets/fonts/TT-Commons-700.eot');
+  src: url('@/assets/fonts/TT-Commons-700.eot?#iefix') format('embedded-opentype'),
+       url('@/assets/fonts/TT-Commons-700.ttf') format('truetype'),
+       url('@/assets/fonts/TT-Commons-700.woff') format('woff'),
+       url('@/assets/fonts/TT-Commons-700.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'TT-Commons-800';
+  src: url('@/assets/fonts/TT-Commons-800.eot');
+  src: url('@/assets/fonts/TT-Commons-800.eot?#iefix') format('embedded-opentype'),
+       url('@/assets/fonts/TT-Commons-800.ttf') format('truetype'),
+       url('@/assets/fonts/TT-Commons-800.woff') format('woff'),
+       url('@/assets/fonts/TT-Commons-800.woff2') format('woff2');
+}

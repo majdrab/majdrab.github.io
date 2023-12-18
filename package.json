@@ -4,8 +4,8 @@
   "private": true,
   "homepage": "https://majdrab.github.io",
   "scripts": {
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
@@ -13,6 +13,8 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "swiper": "^11.0.5",
+    "vanilla-cookieconsent": "^2.9.2",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5"
   },
@@ -20,11 +22,19 @@
     "@rushstack/eslint-patch": "^1.3.3",
     "@vitejs/plugin-vue": "^4.4.0",
     "@vue/eslint-config-prettier": "^8.0.0",
+    "autoprefixer": "^10.4.16",
     "eslint": "^8.49.0",
     "eslint-plugin-vue": "^9.17.0",
     "gh-pages": "^6.0.0",
-    "prettier": "^3.0.3",
-    "sass": "^1.69.5",
+    "postcss": "^8.4.32",
+    "postcss-each": "^1.1.0",
+    "postcss-each-in-map": "^1.0.2",
+    "postcss-each-variables": "^0.3.0",
+    "postcss-import": "^15.1.0",
+    "postcss-nesting": "^12.0.2",
+    "postcss-preset-env": "^9.3.0",
+    "prettier": "^3.1.1",
+    "tailwindcss": "^3.3.7",
     "vite": "^4.4.11"
   }
 }

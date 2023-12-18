@@ -1,0 +1,49 @@
+body {
+  @apply font-regular text-[18px] leading-[120%] text-gray;
+}
+
+.hero-title {
+  @apply font-light text-[42px] leading-[100%] -tracking-[0.462px];
+}
+
+h1, .h1 {
+  @apply font-bold text-[32px] leading-[110%];
+}
+
+h2, .h2 {
+  @apply font-bold text-[28px] leading-[110%];
+}
+
+h3, .h3 {
+  @apply font-bold text-[16px] leading-[110%];
+}
+
+h4, .h4 {
+  @apply font-regular text-[16px] leading-[110%] tracking-[1.6px];
+}
+
+/* h5 {
+  @apply font-semibold text-base leading-5;
+} */
+
+b, strong, .bold {
+  @apply font-bold;
+}
+
+/* other text styles */
+
+.text-product-titles {
+  @apply font-bold text-[20px] leading-[100%];
+}
+.text-flash {
+  @apply font-regular text-[22px] leading-[110%];
+}
+.txt-xs {
+  @apply font-regular text-[13px] leading-[16px] tracking-[1.3px];
+}
+.txt-sm {
+  @apply font-regular text-[14px] leading-[120%];
+}
+.txt-md {
+  @apply font-regular text-[16px] leading-[120%];
+}

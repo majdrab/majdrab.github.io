@@ -1,0 +1,26 @@
+ul {
+  li {
+    padding-left: 18px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      width: 4px;
+      height: 4px;
+      left: 0;
+      top: 8px;
+      background-color: theme('colors.gray.DEFAULT');
+    }
+  }
+}
+details {
+  icon {
+    transition: transform 0.3s ease-in-out;
+  }
+}
+details[open] {
+  icon {
+    transform: rotate(-180deg);
+  }
+}

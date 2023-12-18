@@ -1,0 +1,13 @@
+.banner {
+  img {
+    height: 640px;
+  }
+  .breadcrumb {
+    a {
+      color: $basic-000;
+      &:hover {
+        color: $basic-000-08;
+      }
+    }
+  }
+}

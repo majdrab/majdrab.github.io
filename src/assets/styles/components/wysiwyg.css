@@ -1,0 +1,9 @@
+.wysiwyg {
+  > *:not(:last-child) {
+    @apply mb-6;
+  }
+
+  ul {
+    @apply list-disc pl-6;
+  }
+}

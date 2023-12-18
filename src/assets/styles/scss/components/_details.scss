@@ -1,0 +1,32 @@
+details {
+  summary {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    cursor: pointer;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+    .icon-chevron-down {
+      width: 12px;
+      font-size: 12px;
+    }
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  &[open] {
+    > summary {
+      [class*="icon-"] {
+        transform: rotate(180deg);
+        color: $primary;
+      }
+    }
+  }
+  .content {
+    margin-left: 20px;
+  }
+}

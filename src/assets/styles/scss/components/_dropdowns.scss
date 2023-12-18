@@ -1,0 +1,151 @@
+.dropdown {
+  top: 26px;
+  left: -24px;
+  border-radius: 4px;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  user-select: none;
+  pointer-events: none;
+  box-shadow: 0px 0px 8px 0px rgba(0, 41, 70, 0.32);
+  cursor: default;
+  transition: all 0.3s ease-in-out;
+  &-overlay {
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    user-select: none;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  &.dropdown-is-active {
+    top: 46px;
+    z-index: $index-top;
+    visibility: visible;
+    opacity: 1;
+    user-select: auto;
+    pointer-events: auto;
+    & ~ .dropdown-overlay {
+      background-color: rgba(0, 41, 70, 0.32);
+      visibility: visible;
+      opacity: 1;
+      user-select: auto;
+      pointer-events: auto;
+      z-index: $index-mid;
+    }
+  }
+  a {
+    // font-feature-settings: 'liga' off;
+    background-color: $basic-000;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: $basic-100;
+    }
+  }
+  &-about,
+  &-profile,
+  &-language {
+    min-width: 216px;
+  }
+  &-language {
+    left: unset;
+    right: 0;
+  }
+  &-cart {
+    width: 360px;
+    left: unset;
+    right: -178px;
+    @include breakpoint-down(lg) {
+      right: -96px;
+    }
+    @include breakpoint-down(sm) {
+      right: -60px;
+    }
+    @include breakpoint-down(xs) {
+      position: fixed;
+      width: 100%;
+      right: 0;
+    }
+    .dropdown__divider {
+      width: 100%;
+    }
+    .btn {
+      height: unset;
+      &:hover {
+        color: $basic-000;
+        background-color: $primary;
+      }
+    }
+    .picture-container {
+      min-width: 64px;
+      max-width: 64px;
+      img {
+        width: 100%;
+      }
+    }
+    .form {
+      input {
+        padding: 8px 12px !important;
+        height: unset !important;
+      }
+    }
+    &__product-right {
+      // width: 232px;
+      width: 100%;
+    }
+  }
+}
+.dropdown-construction {
+  &__left {
+    width: 280px;
+    border-radius: 4px 0 0 4px;
+    button {
+      height: 52px;
+      &:hover {
+        color: $secondary;
+        background-color: $basic-000;
+      }
+      &.active {
+        background-color: $basic-000;
+        span {
+          color: $primary;
+        }
+      }
+    }
+  }
+  &__right {
+    width: 320px;
+    border-radius: 0 4px 4px 0;
+    img {
+      width: 64px;
+      height: 64px;
+    }
+    &--view {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+    a {
+      display: flex;
+      background-color: $transparent;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        background-color: $basic-100;
+      }
+    }
+  }
+}
+
+.dropdown__divider {
+  width: calc(100% - (2 * 24px));
+}

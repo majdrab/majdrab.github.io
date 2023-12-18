@@ -1,0 +1,100 @@
+/* html & body */
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  &.loading * {
+    transition: none !important;
+  }
+  &.overflow-hidden {
+    overflow: hidden;
+  }
+  &.small-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: $basic-000;
+}
+main {
+  margin-top: var(--header-height);
+}
+
+/* All */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box !important;
+}
+
+*:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Links */
+
+a {
+  color: $basic-900;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  &:hover {
+    color: $basic-900;
+    text-decoration: none;
+  }
+}
+
+/* Text */
+
+// b,
+// strong {
+  // font-family: 'Arial-Bold';
+// }
+p {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+
+:root {
+  --header-color: #{$basic-000};
+  --header-background: #{$secondary};
+
+  // Header
+  @each $breakpoint, $height in $header-heights {
+    @include breakpoint-up($breakpoint) {
+      --header-height: #{$height};
+    }
+  }
+
+  // Container
+  // @each $breakpoint, $max-width in $container-max-widths {
+  //   @include breakpoint-up($breakpoint) {
+  //     --container-max-width: #{$max-width};
+  //   }
+  // }
+
+  // Vh
+  --vh: 1vh;
+
+  // Paddings
+  @each $breakpoint, $py, $px, $px-inner in $container-paddings {
+    @include breakpoint-up($breakpoint) {
+      --padding-py: #{$py};
+      --padding-px: #{$px};
+    }
+  }
+}

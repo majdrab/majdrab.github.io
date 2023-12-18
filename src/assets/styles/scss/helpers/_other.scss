@@ -1,0 +1,173 @@
+/* Position */
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+/* Overflow */
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.scroll-auto {
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+
+.scroll-none {
+  overflow: auto;
+  overscroll-behavior: none;
+}
+
+/* Display */
+
+.inline-block {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+
+/* Animated underline */
+/* Needs to be on an inline element (span, b, strong, etc) */
+
+@each $key, $value in $colors {
+  .underline-#{$key} {
+    background-image: linear-gradient($transparent, $transparent),
+      linear-gradient($value, $value);
+    background-size: 100% 1.75px, 0 1.75px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.4s 0.1s ease-out;
+    &.reverse {
+      background-position: 0% 100%, 100% 100%;
+    }
+  }
+}
+
+/* Border */
+
+@each $key, $value in $colors {
+  .b-full-#{$key} {
+    border: 1px solid $value;
+  }
+  .bt-#{$key} {
+    border-top: 1px solid $value;
+  }
+  .br-#{$key} {
+    border-right: 1px solid $value;
+  }
+  .bb-#{$key} {
+    border-bottom: 1px solid $value;
+  }
+  .bl-#{$key} {
+    border-left: 1px solid $value;
+  }
+  .bx-#{$key} {
+    border-left: 1px solid $value;
+    border-right: 1px solid $value;
+  }
+  .by-#{$key} {
+    border-top: 1px solid $value;
+    border-bottom: 1px solid $value;
+  }
+  .bdt-#{$key} {
+    border-top: 1px dashed $value;
+  }
+  .bdr-#{$key} {
+    border-right: 1px dashed $value;
+  }
+  .bdb-#{$key} {
+    border-bottom: 1px dashed $value;
+  }
+  .bdl-#{$key} {
+    border-left: 1px dashed $value;
+  }
+}
+
+.bb-darken {
+  border-bottom: 1px solid #0000001a;
+}
+
+.bt-darken {
+  border-top: 1px solid #0000001a;
+}
+
+/* Underline */
+
+.underline {
+  background-image: linear-gradient($transparent, $transparent),
+    linear-gradient($primary, $primary);
+  background-size: 100% 2px, 0 2px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s 0.1s ease-out;
+
+  @each $key, $value in $colors {
+    &--#{$key} {
+      background-image: linear-gradient(#0000, #0000),
+      linear-gradient($value, $value);
+    }
+  }
+  &.reverse {
+    background-position: 0% 100%, 100% 100%;
+  }
+}
+
+a,
+button {
+  &:hover {
+    .underline,
+    &.underline {
+      background-size: 0 2px, 100% 2px;
+      transition: background-size 0.5s 0s ease-out;
+    }
+  }
+}
+
+/* item-hidden */
+
+.item-hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 1px;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+/* Shadows */
+.shadow-xl {
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.16);
+}
+.shadow-lg {
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.12);
+}
+.shadow-md {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
+}
+.shadow-sm {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.24);
+}
+
+/* Aspect ratios */
+
+.ratio-square {
+  aspect-ratio: 1/1;
+}
+
+.ws-nowrap {
+  white-space: wrap;
+}

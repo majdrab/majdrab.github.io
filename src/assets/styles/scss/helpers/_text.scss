@@ -1,0 +1,163 @@
+/* Text */
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.unuppercase {
+  text-transform: none;
+}
+
+.transform-none {
+  text-transform: none;
+}
+.crossed-out {
+  text-decoration: line-through;
+}
+.text-space {
+  letter-spacing: 0.48px;
+}
+
+/* TEXT STYLES */
+
+/* Heading */
+.hero-title {
+  font-family: 'TT-Commons-800';
+  font-size: 80px;
+  line-height: 80px;
+  @include breakpoint-down(xxl) {
+    font-size: 76px;
+    line-height: 76px;
+  }
+  @include breakpoint-down(xl) {
+    font-size: 72px;
+    line-height: 72px;
+  }
+  @include breakpoint-down(lg) {
+    font-size: 68px;
+    line-height: 68px;
+  }
+  @include breakpoint-down(md) {
+    font-size: 64px;
+    line-height: 64px;
+  }
+  @include breakpoint-down(sm) {
+    font-size: 56px;
+    line-height: 56px;
+  }
+  @include breakpoint-down(xs) {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+
+/* Body */
+.body-lg {
+  font-family: 'TT-Commons-400';
+  font-size: 20px !important;
+  line-height: 24px !important;
+}
+.body-ex {
+  font-family: 'TT-Commons-400';
+  font-size: 16px !important;
+  line-height: 24px !important;
+  letter-spacing: 3.84px !important;
+}
+.body {
+  font-family: 'TT-Commons-400' !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+}
+.body-sm {
+  font-family: 'TT-Commons-400';
+  font-size: 14px !important;
+  line-height: 18px !important;
+}
+.body-xs {
+  font-family: 'TT-Commons-400';
+  font-size: 12px !important;
+  line-height: 16px !important;
+}
+
+/* Other */
+.text-label {
+  font-family: 'TT-Commons-400';
+  font-size: 14px;
+  line-height: 20px;
+}
+.text-input {
+  font-family: 'TT-Commons-400';
+  font-size: 16px;
+  line-height: 24px;
+}
+.text-button {
+  font-family: 'TT-Commons-600';
+  font-size: 16px;
+  line-height: 24px;
+}
+.text-menu {
+  font-family: 'TT-Commons-600';
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: 'clig' off, 'liga' off;
+  &-lg {
+    font-family: 'TT-Commons-600' !important;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 18px !important;
+    line-height: 24px !important;
+  }
+  &-md {
+    font-family: 'TT-Commons-500';
+    font-feature-settings: 'liga' off;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  &-sm {
+    font-family: 'TT-Commons-400';
+    font-feature-settings: 'liga' off;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+.text-xxs {
+  font-size: 8px;
+  line-height: 1;
+}
+
+.text-icon-sm {
+  font-size: 16px;
+}
+.text-icon {
+  font-size: 24px;
+  line-height: 1;
+}
+.text-icon-32 {
+  font-size: 32px;
+  line-height: 1;
+}
+.bold-5 {
+  font-family: 'TT-Commons-500' !important;
+}
+.bold-6 {
+  font-family: 'TT-Commons-600' !important;
+}
+.bold-7 {
+  font-family: 'TT-Commons-700' !important;
+}
+.bold-8 {
+  font-family: 'TT-Commons-800' !important;
+}
+// .text-xs {
+//   font-size: 12px;
+//   line-height: 16px;
+// }
