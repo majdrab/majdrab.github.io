@@ -1,9 +1,11 @@
 .menu {
   > * {
     &::after {
-      content: "";
-      @apply bg-secondary block w-0 h-[9px] absolute bottom-[-33px] left-0;
-      transition: width 0.3s ease, height 0.3s ease;
+      content: '';
+      @apply absolute bottom-[-33px] left-0 block h-[9px] w-0 bg-secondary;
+      transition:
+        width 0.3s ease,
+        height 0.3s ease;
     }
     &:hover {
       &::after {
@@ -13,8 +15,8 @@
     &.active {
       @apply text-primary;
       &::after {
-        content: "";
-        @apply bg-secondary block w-full h-[9px] absolute bottom-[-33px] left-0;
+        content: '';
+        @apply absolute bottom-[-33px] left-0 block h-[9px] w-full bg-secondary;
       }
     }
   }

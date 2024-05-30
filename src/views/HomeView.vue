@@ -3,7 +3,5 @@
 </script>
 
 <template>
-  <main>
-    <!-- <TheWelcome /> -->
-  </main>
+  <p class="text-secondary bg-underline">haaaha</p>
 </template>

@@ -1,5 +1,0 @@
-// Solution to flickering on safari
-.swiper-slide {
-  -webkit-transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-}

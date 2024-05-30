@@ -1,5 +1,11 @@
-body {
-  @apply flex flex-col justify-between min-h-screen bg-gray-bg;
+*,
+*::before,
+*::after {
+  @apply box-border;
+}
+
+#app {
+  @apply flex min-h-screen flex-col justify-between bg-gray-bg;
 }
 
 a {
@@ -8,8 +14,17 @@ a {
   }
 }
 
+ol,
+ul {
+  @apply list-none;
+}
+
+table {
+  @apply border-collapse border-spacing-0;
+}
+
 input {
-  @apply border-none outline-none bg-transparent;
+  @apply border-none bg-transparent outline-none;
 }
 
 :root {

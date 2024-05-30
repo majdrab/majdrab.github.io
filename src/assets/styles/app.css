@@ -1,19 +1,19 @@
-@import "tailwindcss/base";
-  @import "./base/base.css";
-  @import "./base/fonts.css";
-  @import "./base/typography.css";
+@import 'tailwindcss/base';
+@import './base/base.css';
+@import './base/fonts.css';
+@import './base/typography.css';
 
-@import "tailwindcss/components";
-  @import "./components/components.css";
-  @import "./components/checkbox.css";
-  @import "./components/buttons.css";
-  @import "./components/form_base.css";
-  @import "./components/menu.css";
-  @import "./components/swiper.css";
-  @import "./components/wysiwyg.css";
+@import 'tailwindcss/components';
+@import './components/components.css';
+@import './components/checkbox.css';
+@import './components/buttons.css';
+@import './components/form_base.css';
+@import './components/menu.css';
+@import './components/swiper.css';
+@import './components/wysiwyg.css';
 
-@import "tailwindcss/utilities";
-  @import "./utilities/container.css";
-  @import "./utilities/icons.css";
-  @import "./utilities/other.css";
-  @import "./utilities/utilities.css";
+@import 'tailwindcss/utilities';
+@import './utilities/container.css';
+@import './utilities/icons.css';
+@import './utilities/other.css';
+@import './utilities/utilities.css';

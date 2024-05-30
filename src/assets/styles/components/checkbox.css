@@ -9,7 +9,7 @@
       }
 
       .faux-checkbox {
-        @apply !bg-primary border-primary;
+        @apply border-primary !bg-primary;
       }
     }
   }

@@ -1,7 +1,8 @@
 @font-face {
   font-family: 'fist_ico';
-  src:  url('../../fonts/fist_ico.eot?lqhtb0');
-  src:  url('../../fonts/fist_ico.eot?lqhtb0#iefix') format('embedded-opentype'),
+  src: url('../../fonts/fist_ico.eot?lqhtb0');
+  src:
+    url('../../fonts/fist_ico.eot?lqhtb0#iefix') format('embedded-opentype'),
     url('../../fonts/fist_ico.ttf?lqhtb0') format('truetype'),
     url('../../fonts/fist_ico.woff?lqhtb0') format('woff'),
     url('../../fonts/fist_ico.svg?lqhtb0#fist_ico') format('svg');
@@ -10,7 +11,8 @@
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^='icon-'],
+[class*=' icon-'] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'fist_ico' !important;
   speak: never;
@@ -26,92 +28,92 @@
 }
 
 .icon-doc_download:before {
-  content: "\e900";
+  content: '\e900';
 }
 .icon-email:before {
-  content: "\e901";
+  content: '\e901';
 }
 .icon-enquiry:before {
-  content: "\e902";
+  content: '\e902';
 }
 .icon-level_up:before {
-  content: "\e903";
+  content: '\e903';
 }
 .icon-link_ext:before {
-  content: "\e904";
+  content: '\e904';
 }
 .icon-linkedin:before {
-  content: "\e905";
+  content: '\e905';
 }
 .icon-yt:before {
-  content: "\e906";
+  content: '\e906';
 }
 .icon-video:before {
-  content: "\e907";
+  content: '\e907';
 }
 .icon-stock_in:before {
-  content: "\e908";
+  content: '\e908';
 }
 .icon-stock_out_off:before {
-  content: "\e909";
+  content: '\e909';
 }
 .icon-tag:before {
-  content: "\e90a";
+  content: '\e90a';
 }
 .icon-usage:before {
-  content: "\e90b";
+  content: '\e90b';
 }
 .icon-list:before {
-  content: "\e90c";
+  content: '\e90c';
 }
 .icon-filters:before {
-  content: "\e90d";
+  content: '\e90d';
 }
 .icon-arrow_circle_DW:before {
-  content: "\e90e";
+  content: '\e90e';
 }
 .icon-arrow_circle_L:before {
-  content: "\e90f";
+  content: '\e90f';
 }
 .icon-arrow_circle_R:before {
-  content: "\e910";
+  content: '\e910';
 }
 .icon-arrow_circle_UP:before {
-  content: "\e911";
+  content: '\e911';
 }
 .icon-chevron_DW:before {
-  content: "\e912";
+  content: '\e912';
 }
 .icon-chevron_L:before {
-  content: "\e913";
+  content: '\e913';
 }
 .icon-chevron_R:before {
-  content: "\e914";
+  content: '\e914';
 }
 .icon-chevron_UP:before {
-  content: "\e915";
+  content: '\e915';
 }
 .icon-close:before {
-  content: "\e916";
+  content: '\e916';
 }
 .icon-error:before {
-  content: "\e917";
+  content: '\e917';
 }
 .icon-ok:before {
-  content: "\e918";
+  content: '\e918';
 }
 .icon-minus:before {
-  content: "\e919";
+  content: '\e919';
 }
 .icon-plus:before {
-  content: "\e91a";
+  content: '\e91a';
 }
 .icon-search:before {
-  content: "\e91b";
+  content: '\e91b';
 }
 .icon-menu:before {
-  content: "\e91c";
+  content: '\e91c';
 }
 .icon-home:before {
-  content: "\e91d";
+  content: '\e91d';
 }

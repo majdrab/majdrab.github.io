@@ -13,11 +13,13 @@
     }
   } */
 
-  a, button {
+  a {
     &:hover {
       > .bg-underline,
       &.bg-underline {
-        background-size: 0 0.1em, 100% 0.1em;
+        background-size:
+          0 0.1em,
+          100% 0.1em;
         transition: background-size 0.5s 0s ease-out;
       }
     }
@@ -50,11 +52,10 @@
   }
 
   .visually-hidden {
-    @apply invisible absolute top-0 left-0 w-px h-px;
+    @apply invisible absolute left-0 top-0 h-px w-px;
   }
 
-
-  .full{
+  .full {
     grid-column: 1 / -1;
   }
 
