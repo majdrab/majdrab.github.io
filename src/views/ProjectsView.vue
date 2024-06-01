@@ -3,11 +3,7 @@
 </script>
 
 <template>
-  <main class="home">
-    <BaseContainer>
-      <h2 class="">This is Home Page</h2>
-    </BaseContainer>
-  </main>
+  <h2 class="">Projekti</h2>
 </template>
 
 <style scoped>

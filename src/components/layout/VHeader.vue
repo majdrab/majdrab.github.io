@@ -9,11 +9,11 @@
 
 <template>
   <header class="header">
-    <BaseContainer innerClass="ena dva tri">
-      <p class="flex text-secondary">to je header</p>
-      <nav class="text-orange">
+    <BaseContainer innerClass="">
+      <nav class="navigation">
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/projects">Projects</RouterLink>
       </nav>
     </BaseContainer>
   </header>
@@ -21,6 +21,9 @@
 
 <style scoped>
 .header {
-  @apply bg-primary;
+  @apply bg-primary flex-none;
+}
+.navigation {
+  @apply flex gap-2 text-secondary uppercase;
 }
 </style>

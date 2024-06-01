@@ -74,7 +74,7 @@ export default {
         dark: '#202020',
         '400': '#67686B',
         '300': '#9EA0A5',
-        '200': 'CECFD2',
+        '200': '#CECFD2',
         '100': '#F1EDFF',
       },
       purple: {

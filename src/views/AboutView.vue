@@ -1,7 +1,11 @@
+<script setup>
+// import TheWelcome from '../components/TheWelcome.vue'
+</script>
+
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <section class="about">
+    <h2>This is an about page</h2>
+  </section>
 </template>
 
 <style scoped>
