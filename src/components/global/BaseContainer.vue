@@ -3,13 +3,17 @@ defineProps({
   isFull: {
     type: Boolean,
     required: false
+  },
+  innerClass: {
+    type: String,
+    required: false
   }
 })
 </script>
 
 <template>
   <div class="base-container">
-    <div :class="isFull ? 'full' : 'content'">
+    <div :class="[isFull ? 'base-container__full' : 'base-container__content', innerClass]">
       <slot></slot>
     </div>
   </div>
@@ -42,10 +46,10 @@ defineProps({
   }
 }
 
-.full {
+.base-container__full {
   grid-column: 1 / -1;
 }
-.content {
+.base-container__content {
   grid-column: content;
 }
 </style>
