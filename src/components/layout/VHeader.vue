@@ -24,6 +24,6 @@
   @apply bg-primary flex-none;
 }
 .navigation {
-  @apply flex gap-2 text-secondary uppercase;
+  @apply flex items-center gap-2 text-secondary uppercase h-[68px];
 }
 </style>
