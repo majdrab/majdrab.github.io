@@ -23,7 +23,7 @@
   display: flex;
   justify-content: center;
   .swiper-pagination-bullet {
-    background-color: theme('colors.gray.lines');
+    background-color: theme('colors.gray.200');
     opacity: 1;
     width: 8px;
     height: 8px;

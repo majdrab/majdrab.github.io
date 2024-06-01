@@ -61,33 +61,48 @@ export default {
       black: '#000000',
 
       primary: {
-        DEFAULT: '#151A45',
-        // 20: '#151A4533',
-        // 80: '#151A45CC',
+        DEFAULT: '#151736',
+        '60': '#15173699',
+        '30': '#1517364D',
+        light: '#434165',
       },
       secondary: {
-        DEFAULT: '#FEA353',
+        DEFAULT: '#00C894',
       },
       gray: {
-        DEFAULT: '#3C3C3C',
-        lines: '#D2D2D2',
-        captions: '#8F8F8F',
-        bg: '#EBEDEE',
+        DEFAULT: '#313136',
+        dark: '#202020',
+        '400': '#67686B',
+        '300': '#9EA0A5',
+        '200': 'CECFD2',
+        '100': '#F1EDFF',
       },
-      link: {
-        DEFAULT: '#434A8D',
-        dark: '#BFC4F3',
+      purple: {
+        DEFAULT: '#5B2E58',
+        light: '#A44A65',
       },
-      blue: {
-        DEFAULT: '#23295B',
-        bg: '#202556',
-        dark: '#121633',
-        darker: '#0E1130',
+      orange: {
+        DEFAULT: '#DE7561',
+        light: '#FDB25B',
+      },
+      yellow: '#F9F871',
+      beige: {
+        DEFAULT: '#FFFADE',
+        stronger: '#E8D5B5',
+      },
+      lavender: '#BFBBE5',
+      tech: {
+        vue: '#41B883',
+        github: '#171515',
+        sass: '#CC6699',
+        js: '#F0DB4F',
+        css: '#264DE4',
+        html: '#E34C26',
       },
     },
     extend: {
       spacing: {
-        30: '7.5rem',
+        '30': '7.5rem',
       },
       fontSize: {
         '2xs': [
