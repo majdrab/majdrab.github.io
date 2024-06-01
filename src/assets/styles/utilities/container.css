@@ -1,4 +1,4 @@
-.container-grid {
+/* .container-grid {
   --max: calc((var(--container-max-width) - (var(--gap) * 11)) / 12);
   display: grid;
   grid-template-columns:
@@ -37,4 +37,4 @@
     [content-gap content-end];
   grid-auto-rows: auto;
   width: 100%;
-}
+} */

@@ -55,7 +55,7 @@
     @apply invisible absolute left-0 top-0 h-px w-px;
   }
 
-  .full {
+  /* .full {
     grid-column: 1 / -1;
   }
 
@@ -217,7 +217,7 @@
   }
   .content-span-gap-12 {
     grid-column-end: span 12 content-start;
-  }
+  } */
 
   .flex-full {
     flex: 0 1 100%;

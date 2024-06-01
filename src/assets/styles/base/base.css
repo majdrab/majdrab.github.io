@@ -27,23 +27,6 @@ input {
   @apply border-none bg-transparent outline-none;
 }
 
-:root {
-  --container-max-width: 1200px;
-  --gap: 0.5rem;
-  --padding-px: 24px;
-
-  @media (min-width: theme('screens.md')) {
-    --gap: 1.5rem;
-  }
-
-  @media (min-width: theme('screens.xl')) {
-    --gap: 2rem;
-  }
-
-  @each $key, $value in (theme('screens.xs'), theme('screens.sm'), theme('screens.md'), theme('screens.lg'), theme('screens.xl')), (32px, 46px, 70px, 100px, 120px)
-  {
-    @media (min-width: $(key)) {
-      --padding-px: $(value);
-    }
-  }
-}
+/* :root {
+  
+} */
