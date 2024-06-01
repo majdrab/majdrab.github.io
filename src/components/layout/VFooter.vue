@@ -1,8 +1,8 @@
 <script setup>
 defineProps({
-  contactData: {
+  contactsData: {
     type: Array,
-    required: false
+    required: true
   }
 })
 </script>
@@ -14,7 +14,7 @@ defineProps({
       <div class="">
         <h4 class="text-gray-200">Contacts:</h4>
         <a 
-          v-for="(contact, index) in contactData" 
+          v-for="(contact, index) in contactsData" 
           :key="index" 
           :href="contact.href"
           class="text-gray-200 flex pl-2"

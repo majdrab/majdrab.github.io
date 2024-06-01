@@ -4,13 +4,13 @@ import { RouterLink, RouterView } from 'vue-router'
 import VHeader from './components/layout/VHeader.vue';
 import VFooter from './components/layout/VFooter.vue';
 
-import contactData from './data/contactData.json';
+import contactsData from './data/contactsData.json';
 </script>
 
 <template>
   <VHeader />
   <RouterView/>
-  <VFooter  :contactData="contactData"/>
+  <VFooter  :contactsData="contactsData"/>
 </template>
 
 <style scoped>
