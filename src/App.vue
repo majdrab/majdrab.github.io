@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 
 import VHeader from './components/layout/VHeader.vue';
+import VMain from './components/layout/VMain.vue';
 import VFooter from './components/layout/VFooter.vue';
 
 import contactsData from './data/contactsData.json';
@@ -9,12 +10,12 @@ import contactsData from './data/contactsData.json';
 
 <template>
   <VHeader />
-  <RouterView/>
+  <VMain>
+    <RouterView/>
+  </VMain>
   <VFooter  :contactsData="contactsData"/>
 </template>
 
 <style scoped>
-main {
-  @apply flex-1 pt-6 pb-10;
-}
+
 </style>

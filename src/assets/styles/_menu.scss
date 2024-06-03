@@ -1,0 +1,153 @@
+.menu-full {
+  white-space: nowrap;
+  width: calc(100% - 160px);
+  @include breakpoint-down(lg) {
+    width: unset;
+  }
+  button,
+  .btn {
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+    @include breakpoint-down(sm) {
+      height: 40px;
+      padding: 8px;
+    }
+  }
+  .br-basic-000-02 {
+    height: 24px;
+    @include breakpoint-down(lg) {
+      height: 40px;
+      margin: 0 2px 0 10px;
+    }
+    @include breakpoint-down(sm) {
+      margin: 0 10px;
+    }
+  }
+  .dropdown-holder {
+    display: flex;
+    align-items: center;
+  }
+  &__top {
+    border-bottom: 1px solid $basic-000-02;
+    button,
+    .btn {
+      span.primary {
+        font-size: 24px;
+      }
+      &:hover {
+        color: $primary;
+      }
+      .icon-carret_down_12 {
+        margin-top: 2px;
+      }
+    }
+    @include breakpoint-down(xl) {
+      gap: 30px;
+    }
+    @include breakpoint-down(lg) {
+      border-bottom: none;
+      height: 100%;
+    }
+    @include breakpoint-down(sm) {
+      gap: 5px;
+    }
+  }
+  &__bottom {
+    button,
+    .btn {
+      span.primary {
+        font-size: 24px;
+      }
+      &:hover {
+        color: $primary;
+      }
+      .icon-carret_down_12 {
+        margin-top: 2px;
+      }
+    }
+    @include breakpoint-down(xl) {
+      gap: 30px;
+    }
+  }
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  user-select: none;
+  pointer-events: none;
+  background: $secondary;
+  width: 375px;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 40px 15px 58px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, z-index 0s 0.35s, visibility 0s 0.35s;
+  &.menu-is-active {
+    z-index: $index-mid;
+    visibility: visible;
+    opacity: 1;
+    user-select: auto;
+    pointer-events: auto;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out, opacity 0.3s 0s ease-in-out, z-index 0s, visibility 0s;
+  }
+  @include breakpoint-down(sm) {
+    width: 100%;
+  }
+  .menu__area {
+    padding: 0 30px;
+    a {
+      justify-content: start;
+      padding: 8px 0;
+    }
+    button,
+    .btn,
+    summary {
+      height: auto;
+    }
+  }
+  button,
+  .btn {
+    height: 24px;
+    @include breakpoint-down(sm) {
+      height: 40px;
+      // padding: 8px;
+    }
+    transition: all 0.3s ease-in-out;
+    span.primary {
+      font-size: 24px;
+      transition: all 0.3s ease-in-out;
+    }
+    span.basic-000 {
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover {
+      color: rgba(255, 255, 255, 0.8);
+      span.primary {
+        color: rgba(255, 255, 255, 0.8);
+      }
+      span.basic-000 {
+        color: rgba(255, 255, 255, 0.8);
+      }
+    }
+    .icon-carret_down_12 {
+      margin-top: 2px;
+    }
+  }
+
+  &-open {
+    &:hover {
+      color: $basic-000;
+    }
+  }
+  &-close {
+    font-size: 24px;
+    // width: 24px;
+    height: 40px !important;
+  }
+}

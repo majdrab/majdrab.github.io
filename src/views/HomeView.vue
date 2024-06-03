@@ -3,11 +3,11 @@
 </script>
 
 <template>
-  <main class="home">
+  <div class="home">
     <BaseContainer>
       <h2 class="">This is Home Page</h2>
     </BaseContainer>
-  </main>
+  </div>
 </template>
 
 <style scoped>
