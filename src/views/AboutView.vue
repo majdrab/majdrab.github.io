@@ -3,9 +3,11 @@
 </script>
 
 <template>
-  <section class="about">
-    <h2>This is an about page</h2>
-  </section>
+  <div class="about">
+    <BaseContainer>
+      <h2 class="">This is About page</h2>
+    </BaseContainer>
+  </div>
 </template>
 
 <style scoped>

@@ -3,7 +3,11 @@
 </script>
 
 <template>
-  <h2 class="">Projekti</h2>
+  <div class="projects">
+    <BaseContainer>
+      <h2 class="">This is Projects page</h2>
+    </BaseContainer>
+  </div>
 </template>
 
 <style scoped>
