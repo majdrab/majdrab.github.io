@@ -1,6 +1,12 @@
 <script setup>
 import SHeader from '../svgs/SHeader.vue';
+import SHeaderLeft from '../svgs/SHeaderLeft.vue';
+import SHeaderRight from '../svgs/SHeaderRight.vue';
 import SFooter from '../svgs/SFooter.vue';
+import SFooterLeft from '../svgs/SFooterLeft.vue';
+import SFooterRight from '../svgs/SFooterRight.vue';
+import SSideLeft from '../svgs/SSideLeft.vue';
+import SSideRight from '../svgs/SSideRight.vue';
 
 // defineProps({
 //   isFull: {
@@ -12,21 +18,27 @@ import SFooter from '../svgs/SFooter.vue';
 
 <template>
   <main class="main">
-    <BaseContainer isFull class="environment top-0">
+    <BaseContainer isFull class="main__environment top-0 h-full overflow-y-hidden">
       <SHeader />
+      <SHeaderLeft />
+      <SHeaderRight />
+      <SSideLeft />
+      <SSideRight />
+      <SFooter />
+      <SFooterLeft />
+      <SFooterRight />
     </BaseContainer>
     <slot></slot>
-    <BaseContainer isFull class="environment bottom-0">
-      <SFooter />
-    </BaseContainer>
   </main>
 </template>
 
 <style scoped>
 .main {
   @apply flex-1 pt-16 pb-14 relative;
+
+  .main__environment {
+    @apply absolute select-none pointer-events-none;
+  }
 }
-.environment {
-  @apply absolute select-none pointer-events-none;
-}
+
 </style>

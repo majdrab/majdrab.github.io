@@ -38,7 +38,7 @@ defineProps({
   --container-max-width: 1400px;
   --padding-px: 20px;
 
-  @each $key, $value in (theme('screens.xs'), theme('screens.sm'), theme('screens.md'), theme('screens.lg'), theme('screens.xl')), (28px, 40px, 60px, 80px, 100px)
+  @each $key, $value in (theme('screens.xs'), theme('screens.sm'), theme('screens.md'), theme('screens.lg'), theme('screens.xl')), (28px, 40px, 100px, 110px, 120px)
   {
     @media (min-width: $(key)) {
       --padding-px: $(value);
