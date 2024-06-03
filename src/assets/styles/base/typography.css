@@ -18,12 +18,12 @@ h2,
 
 h3,
 .h3 {
-  @apply font-bold text-[16px] leading-[110%];
+  @apply font-bold text-[24px] leading-[110%];
 }
 
 h4,
 .h4 {
-  @apply font-regular text-[16px] leading-[110%] tracking-[1.6px];
+  @apply font-regular text-[20px] leading-[110%] tracking-[1.6px];
 }
 
 /* h5 {
