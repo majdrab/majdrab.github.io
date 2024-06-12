@@ -5,11 +5,13 @@
 <template>
   <div class="projects">
     <BaseContainer>
-      <h2 class="">This is Projects page</h2>
+      <h1 class="">This is Projects page</h1>
     </BaseContainer>
   </div>
 </template>
 
 <style scoped>
-
+.projects {
+  @apply pt-16 pb-14;
+}
 </style>

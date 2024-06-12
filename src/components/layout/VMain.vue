@@ -18,7 +18,7 @@ import SSideRight from '../svgs/SSideRight.vue';
 
 <template>
   <main class="main">
-    <BaseContainer isFull class="main__environment top-0 h-full overflow-y-hidden">
+    <BaseContainer isFull class="main__environment top-0 h-full overflow-y-hidden z-[1]">
       <SHeader />
       <SHeaderLeft />
       <SHeaderRight />
@@ -34,11 +34,11 @@ import SSideRight from '../svgs/SSideRight.vue';
 
 <style scoped>
 .main {
-  @apply flex-1 pt-16 pb-14 relative;
-
+  @apply flex-1 items-stretch relative flex;
   .main__environment {
     @apply absolute select-none pointer-events-none;
   }
 }
+
 
 </style>

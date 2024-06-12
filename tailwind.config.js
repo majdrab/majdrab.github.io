@@ -173,6 +173,23 @@ export default {
             backgroundPosition: '0% 100%, 100% 100%'
           }
         },
+        '.v-hidden': {
+          opacity: '0',
+          visibility: 'hidden',
+          pointerEvents: 'none',
+          userSelect: 'none',
+        },
+        '.v-visible': {
+          opacity: '1',
+          visibility: 'visible',
+          pointerEvents: 'auto',
+          userSelect: 'auto',
+        },
+        '.v-transition': {
+          transitionProperty: 'opacity, visibility, pointer-events, user-select',
+          transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
+          transitionDuration: '0.3s',
+        },
         // '.gradient-1': {
         //   background: `linear-gradient(89deg, ${theme(colors.primary,20)}, ${theme(colors.link.default)})`
         // },

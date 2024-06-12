@@ -33,5 +33,7 @@
 </template>
 
 <style scoped>
-
+.about {
+  @apply pt-16 pb-14;
+}
 </style>

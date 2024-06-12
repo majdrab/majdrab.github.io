@@ -3,7 +3,7 @@ body {
 }
 
 .hero-title {
-  @apply font-light text-[42px] leading-[100%] -tracking-[0.462px];
+  @apply font-light text-[62px] leading-[100%] -tracking-[0.462px];
 }
 
 h1,
