@@ -34,6 +34,6 @@
 
 <style scoped>
 .about {
-  @apply pt-16 pb-14 min-h-screen;
+  @apply pt-16 pb-14 min-h-screen border-primary-light border-4;
 }
 </style>

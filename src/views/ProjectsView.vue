@@ -12,6 +12,6 @@
 
 <style scoped>
 .projects {
-  @apply pt-16 pb-14 min-h-screen;
+  @apply pt-16 pb-14 min-h-screen border-purple border-4;
 }
 </style>

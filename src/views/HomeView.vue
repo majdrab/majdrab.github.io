@@ -17,7 +17,7 @@
 
 <style scoped>
 .home {
-  @apply pt-16 pb-14 bg-transparent min-h-screen;
+  @apply pt-16 pb-14 bg-transparent min-h-screen border-orange border-4;
   animation: 8s remove-animation;
   .home__animation {
     @apply w-[700px];
