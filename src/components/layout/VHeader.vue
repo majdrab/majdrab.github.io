@@ -20,9 +20,9 @@
 
 <style scoped>
 .header {
-  @apply bg-primary fixed top-0 left-0 z-50;
+  @apply bg-primary fixed top-0 left-0 z-40 rounded;
 }
 .navigation {
-  @apply flex items-center gap-2 text-secondary uppercase h-[68px];
+  @apply flex flex-col gap-4 py-5 px-4 text-secondary uppercase;
 }
 </style>
