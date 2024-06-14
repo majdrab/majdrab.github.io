@@ -5,8 +5,8 @@ import SHeaderRight from '../svgs/SHeaderRight.vue';
 import SFooter from '../svgs/SFooter.vue';
 import SFooterLeft from '../svgs/SFooterLeft.vue';
 import SFooterRight from '../svgs/SFooterRight.vue';
-import SSideLeft from '../svgs/SSideLeft.vue';
-import SSideRight from '../svgs/SSideRight.vue';
+// import SSideLeft from '../svgs/SSideLeft.vue';
+// import SSideRight from '../svgs/SSideRight.vue';
 
 // defineProps({
 //   isFull: {
@@ -22,8 +22,8 @@ import SSideRight from '../svgs/SSideRight.vue';
       <SHeader />
       <SHeaderLeft />
       <SHeaderRight />
-      <SSideLeft />
-      <SSideRight />
+      <!-- <SSideLeft /> -->
+      <!-- <SSideRight /> -->
       <SFooter />
       <SFooterLeft />
       <SFooterRight />

@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="about">
+  <div class="about" id="about">
     <BaseContainer>
       <h2 class="">More about me</h2>
       <p>I'm Maj Drab, a 29-year-old Slovenian junior Front-end developer. Currently in the process of gaining more programming knowledge and doing all kinds of projects.</p>
@@ -34,6 +34,6 @@
 
 <style scoped>
 .about {
-  @apply pt-16 pb-14;
+  @apply pt-16 pb-14 min-h-screen;
 }
 </style>

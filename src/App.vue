@@ -11,7 +11,11 @@ import contactsData from './data/contactsData.json';
 <template>
   <VHeader />
   <VMain>
-    <RouterView/>
+    <div class="flex flex-col">
+      <RouterView/>
+      <RouterView name="AboutView" />    
+      <RouterView name="ProjectsView" />   
+    </div>
   </VMain>
   <VFooter  :contactsData="contactsData"/>
 </template>

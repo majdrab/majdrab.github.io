@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="home">
+  <div class="home" id="home">
   <BaseContainer class="h-full" innerClass="grid place-content-center">
     <svg viewBox="0 0 700 200"  class="home__animation">
       <text x="50%" y="50%" dy="1rem" text-anchor="middle" class="home__animation-text">
@@ -17,7 +17,7 @@
 
 <style scoped>
 .home {
-  @apply pt-16 pb-14 bg-transparent;
+  @apply pt-16 pb-14 bg-transparent min-h-screen;
   animation: 8s remove-animation;
   .home__animation {
     @apply w-[700px];

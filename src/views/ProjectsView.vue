@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="projects">
+  <div class="projects" id="projects">
     <BaseContainer>
       <h1 class="">This is Projects page</h1>
     </BaseContainer>
@@ -12,6 +12,6 @@
 
 <style scoped>
 .projects {
-  @apply pt-16 pb-14;
+  @apply pt-16 pb-14 min-h-screen;
 }
 </style>
