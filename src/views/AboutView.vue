@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="about" id="about">
+  <div id="about">
     <BaseContainer>
       <h2 class="">More about me</h2>
       <p>I'm Maj Drab, a 29-year-old Slovenian junior Front-end developer. Currently in the process of gaining more programming knowledge and doing all kinds of projects.</p>
@@ -33,7 +33,7 @@
 </template>
 
 <style scoped>
-.about {
-  @apply pt-16 pb-14 min-h-screen border-primary-light border-4;
+#about {
+  @apply pt-16 pb-14 relative min-h-screen border-primary-light border-4;
 }
 </style>

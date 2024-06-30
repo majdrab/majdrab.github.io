@@ -77,6 +77,7 @@ export default {
         '200': '#CECFD2',
         '100': '#F1EDFF',
       },
+      
       purple: {
         DEFAULT: '#5B2E58',
         light: '#A44A65',
@@ -86,6 +87,7 @@ export default {
         light: '#FDB25B',
       },
       yellow: '#F9F871',
+
       beige: {
         DEFAULT: '#FFFADE',
         stronger: '#E8D5B5',

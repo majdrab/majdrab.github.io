@@ -2,17 +2,17 @@
 // import TheWelcome from '../components/TheWelcome.vue'
 import { ref, onMounted } from "vue";
 
-const visible = ref(true)
+const isVisible = ref(true)
 
 onMounted(() => {
   setTimeout(() => {
-    visible.value = false
-  }, 7999);
+    isVisible.value = false
+  }, 8000);
 })
 </script>
 
 <template>
-  <div class="opening-animation" v-if="visible">
+  <div class="opening-animation" v-if="isVisible">
     <svg viewBox="0 0 700 200">
       <text x="50%" y="50%" dy="1rem" text-anchor="middle">
         Maj Drab

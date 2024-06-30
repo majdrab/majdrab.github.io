@@ -1,12 +1,12 @@
 <script setup>
-import SHeader from '../svgs/SHeader.vue';
-import SHeaderLeft from '../svgs/SHeaderLeft.vue';
-import SHeaderRight from '../svgs/SHeaderRight.vue';
-import SFooter from '../svgs/SFooter.vue';
-import SFooterLeft from '../svgs/SFooterLeft.vue';
-import SFooterRight from '../svgs/SFooterRight.vue';
-import SSideLeft from '../svgs/SSideLeft.vue';
-import SSideRight from '../svgs/SSideRight.vue';
+import SHeader from '../../svgs/SHeader.vue';
+import SHeaderLeft from '../../svgs/SHeaderLeft.vue';
+import SHeaderRight from '../../svgs/SHeaderRight.vue';
+import SFooter from '../../svgs/SFooter.vue';
+import SFooterLeft from '../../svgs/SFooterLeft.vue';
+import SFooterRight from '../../svgs/SFooterRight.vue';
+import SSideLeft from '../../svgs/SSideLeft.vue';
+import SSideRight from '../../svgs/SSideRight.vue';
 
 // defineProps({
 //   isFull: {

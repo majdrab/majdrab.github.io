@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="projects" id="projects">
+  <div id="projects">
     <BaseContainer>
       <h1 class="">This is Projects page</h1>
     </BaseContainer>
@@ -11,7 +11,7 @@
 </template>
 
 <style scoped>
-.projects {
-  @apply pt-16 pb-14 min-h-screen border-purple border-4;
+#projects {
+  @apply pt-16 pb-14 relative min-h-screen border-purple border-4;
 }
 </style>

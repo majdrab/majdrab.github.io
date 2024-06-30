@@ -10,14 +10,14 @@ import contactsData from './data/contactsData.json';
 </script>
 
 <template>
-  <OpeningAnimation />
+  <!-- <OpeningAnimation /> -->
   <VHeader />
   <main class="main">
     <RouterView />
     <RouterView name="AboutView" />    
     <RouterView name="ProjectsView" />   
   </main>
-  <VFooter  :contactsData="contactsData"/>
+  <VFooter :contactsData="contactsData"/>
 </template>
 
 <style scoped>

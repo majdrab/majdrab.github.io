@@ -11,9 +11,9 @@
 <template>
   <header class="header">
     <nav class="navigation">
-      <RouterLink to="/" target="_self">Home</RouterLink>
-      <RouterLink to="#about" target="_self">About</RouterLink>
-      <RouterLink to="#projects" target="_self">Projects</RouterLink>
+      <RouterLink to="/" target="_self"><span class="bg-underline">Home</span></RouterLink>
+      <RouterLink to="#about" target="_self"><span class="bg-underline">About</span></RouterLink>
+      <RouterLink to="#projects" target="_self"><span class="bg-underline">Projects</span></RouterLink>
     </nav>
   </header>
 </template>
