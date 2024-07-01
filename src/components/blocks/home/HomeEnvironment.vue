@@ -1,12 +1,11 @@
 <script setup>
-import SHeader from '../../svgs/SHeader.vue';
-import SHeaderLeft from '../../svgs/SHeaderLeft.vue';
-import SHeaderRight from '../../svgs/SHeaderRight.vue';
-import SFooter from '../../svgs/SFooter.vue';
-import SFooterLeft from '../../svgs/SFooterLeft.vue';
-import SFooterRight from '../../svgs/SFooterRight.vue';
-import SSideLeft from '../../svgs/SSideLeft.vue';
-import SSideRight from '../../svgs/SSideRight.vue';
+import Home0Grass from '../../svgs/home/Home0Grass.vue';
+// import Home0Tree from '../../svgs/home/Home0Tree.svg';
+// import Home1 from '../../svgs/home/Home1.svg';
+// import Home2 from '../../svgs/home/Home2.svg';
+// import Home3 from '../../svgs/home/Home3.svg';
+// import Home4 from '../../svgs/home/Home4.svg';
+// import SFooter from '../../svgs/SFooter.vue'
 
 // defineProps({
 //   isFull: {
@@ -18,14 +17,13 @@ import SSideRight from '../../svgs/SSideRight.vue';
 
 <template>
   <BaseContainer isFull class="home-environment">
-    <SHeader />
-    <SHeaderLeft />
-    <SHeaderRight />
-    <SSideLeft />
-    <SSideRight />
-    <SFooter />
-    <SFooterLeft />
-    <SFooterRight />
+    <Home0Grass />
+    <!-- <Home0Tree /> -->
+    <!-- <Home1 /> -->
+    <!-- <Home2 /> -->
+    <!-- <Home3 /> -->
+    <!-- <Home4 /> -->
+    <!-- <SFooter /> -->
   </BaseContainer>
 </template>
 

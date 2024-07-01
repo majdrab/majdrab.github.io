@@ -5,9 +5,9 @@ import HomeEnvironment from '../components/blocks/home/HomeEnvironment.vue'
 <template>
   <section id="home">
     <HomeEnvironment />
-    <BaseContainer class="" innerClass="">
+    <!-- <BaseContainer class="" innerClass="">
       <h1 class="text-primary">I'm a junior front-end web developer and designer. Welcome to my portfolio website!</h1>
-    </BaseContainer>
+    </BaseContainer> -->
   </section>
 </template>
 
