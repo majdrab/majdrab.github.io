@@ -13,6 +13,6 @@ import HomeEnvironment from '../components/blocks/home/HomeEnvironment.vue'
 
 <style scoped>
 #home {
-  @apply pt-16 pb-14 relative min-h-screen border-orange border-4;
+  @apply flex relative min-h-screen;
 }
 </style>

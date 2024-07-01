@@ -22,7 +22,7 @@ img {
 .loader {
   @apply fixed inset-0 z-10 bg-primary grid place-content-center v-visible;
   .loader__box {
-    border: 4px solid theme("colors.secondary.DEFAULT");
+    border: 4px solid theme("colors.spot.DEFAULT");
     border-left-color: transparent;
     border-right-color: transparent;
     @apply rounded-[50%] w-10 h-10;
@@ -104,8 +104,8 @@ img {
     animation: 5s linear infinite breathe;
     @apply w-[100px];
     /* position: absolute; */
-    .menu-dice-svg__secondary {
-      @apply fill-secondary opacity-80;
+    .menu-dice-svg__spot {
+      @apply fill-spot opacity-80;
       transition: opacity 0.3s;
     }
     .menu-dice-svg__primary {

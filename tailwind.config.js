@@ -55,20 +55,27 @@ export default {
       ],
     },
     colors: {
+      // base
       transparent: 'transparent',
       current: 'currentColor',
       white: '#FFFFFF',
       black: '#000000',
 
+      // primary gradient
       primary: {
         DEFAULT: '#151736',
-        '60': '#15173699',
-        '30': '#1517364D',
-        light: '#434165',
+        '400': '#3E3D60',
+        '300': '#6B688E',
+        '200': '#9A96BF',
+        '100': '#CBC7F2',
       },
-      secondary: {
+      // spot palette
+      spot: {
+        lavender: '#434165',
+        light: '#F1EDFF',
         DEFAULT: '#00C894',
       },
+      // gray palette
       gray: {
         DEFAULT: '#313136',
         dark: '#202020',
@@ -77,7 +84,7 @@ export default {
         '200': '#CECFD2',
         '100': '#F1EDFF',
       },
-      
+      // primary-yellow gradient, in order
       purple: {
         DEFAULT: '#5B2E58',
         light: '#A44A65',
@@ -87,12 +94,17 @@ export default {
         light: '#FDB25B',
       },
       yellow: '#F9F871',
-
-      beige: {
-        DEFAULT: '#FFFADE',
-        stronger: '#E8D5B5',
+      // primary-green gradient
+      green: {
+        DEFAULT: '#0F3A5F',
+        '400': '#006083',
+        '300': '#00889E',
+        '200': '#30B1B0',
+        '100': '#72D9B9',
       },
-      lavender: '#BFBBE5',
+      // other
+      beige: '#FFFADE',
+      water: '#AFC0E3',
       tech: {
         vue: '#41B883',
         github: '#171515',

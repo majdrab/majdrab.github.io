@@ -1,11 +1,10 @@
 <script setup>
-import Home0Grass from '../../svgs/home/Home0Grass.vue';
-// import Home0Tree from '../../svgs/home/Home0Tree.svg';
-// import Home1 from '../../svgs/home/Home1.svg';
-// import Home2 from '../../svgs/home/Home2.svg';
-// import Home3 from '../../svgs/home/Home3.svg';
-// import Home4 from '../../svgs/home/Home4.svg';
-// import SFooter from '../../svgs/SFooter.vue'
+import HomeEnvironment0Grass from '../../svgs/home/HomeEnvironment0Grass.vue';
+import HomeEnvironment0Tree from '../../svgs/home/HomeEnvironment0Tree.vue';
+import HomeEnvironment1 from '../../svgs/home/HomeEnvironment1.vue';
+import HomeEnvironment2 from '../../svgs/home/HomeEnvironment2.vue';
+import HomeEnvironment3 from '../../svgs/home/HomeEnvironment3.vue';
+import HomeEnvironment4 from '../../svgs/home/HomeEnvironment4.vue';
 
 // defineProps({
 //   isFull: {
@@ -17,18 +16,19 @@ import Home0Grass from '../../svgs/home/Home0Grass.vue';
 
 <template>
   <BaseContainer isFull class="home-environment">
-    <Home0Grass />
-    <!-- <Home0Tree /> -->
-    <!-- <Home1 /> -->
-    <!-- <Home2 /> -->
-    <!-- <Home3 /> -->
-    <!-- <Home4 /> -->
-    <!-- <SFooter /> -->
+    <HomeEnvironment4 />
+    <HomeEnvironment3 />
+    <HomeEnvironment2 />
+    <HomeEnvironment1 />
+    <HomeEnvironment0Tree />
+    <HomeEnvironment0Grass />
+    
+    
   </BaseContainer>
 </template>
 
 <style scoped>
 .home-environment {
-  @apply absolute inset-0 overflow-y-hidden z-[1] select-none pointer-events-none;
+  @apply relative select-none pointer-events-none overflow-hidden;
 }
 </style>

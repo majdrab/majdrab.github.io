@@ -12,7 +12,7 @@
       <p>I'm actively looking for a job.</p>
       <p>
         <a 
-          class="bg-underline text-secondary"
+          class="bg-underline text-spot"
           target="_blank"
           href=""
         >
@@ -34,6 +34,6 @@
 
 <style scoped>
 #about {
-  @apply pt-16 pb-14 relative min-h-screen border-primary-light border-4;
+  @apply pt-16 pb-14 relative min-h-screen border-yellow border-4;
 }
 </style>

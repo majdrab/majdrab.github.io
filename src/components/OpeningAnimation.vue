@@ -32,7 +32,7 @@ onMounted(() => {
   svg {
     @apply w-[700px];
     text {
-      @apply stroke-[2px] fill-secondary text-[10rem] font-bold tracking-tighter;
+      @apply stroke-[2px] fill-spot text-[10rem] font-bold tracking-tighter;
       animation: 5s  animate-stroke;
     }
   }
@@ -58,7 +58,7 @@ onMounted(() => {
     stroke-dashoffset: 25%;
     stroke-dasharray: 0 32%;
     fill: transparent;
-    stroke: theme('colors.secondary.DEFAULT');
+    stroke: theme('colors.spot.DEFAULT');
   }
   80% {
     fill: transparent;
@@ -66,8 +66,8 @@ onMounted(() => {
   90% {
     stroke-dashoffset: 0;
     stroke-dasharray: 32% 0;
-    fill: theme('colors.secondary.DEFAULT');
-    stroke: theme('colors.secondary.DEFAULT');
+    fill: theme('colors.spot.DEFAULT');
+    stroke: theme('colors.spot.DEFAULT');
   }
   100% {
     stroke: transparent;

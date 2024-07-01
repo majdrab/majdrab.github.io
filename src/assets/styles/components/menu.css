@@ -2,7 +2,7 @@
   > * {
     &::after {
       content: '';
-      @apply absolute bottom-[-33px] left-0 block h-[9px] w-0 bg-secondary;
+      @apply absolute bottom-[-33px] left-0 block h-[9px] w-0 bg-spot;
       transition:
         width 0.3s ease,
         height 0.3s ease;
@@ -16,7 +16,7 @@
       @apply text-primary;
       &::after {
         content: '';
-        @apply absolute bottom-[-33px] left-0 block h-[9px] w-full bg-secondary;
+        @apply absolute bottom-[-33px] left-0 block h-[9px] w-full bg-spot;
       }
     }
   }

@@ -22,7 +22,7 @@ const buttonMenuToggle = () => {
 .button-menu {
   @apply flex flex-col items-center justify-center gap-[5px] w-10 h-10;
   > span {
-    @apply w-[25px] h-[2px] bg-secondary rounded-sm ;
+    @apply w-[25px] h-[2px] bg-spot rounded-sm ;
     transition: all 0.3s ease-in-out;
   }
   &:not(.active):hover {

@@ -23,6 +23,6 @@
   @apply bg-primary fixed top-0 left-0 z-40 rounded;
 }
 .navigation {
-  @apply flex flex-col gap-4 py-5 px-4 text-secondary uppercase;
+  @apply flex flex-col gap-4 py-5 px-4 text-spot uppercase;
 }
 </style>
