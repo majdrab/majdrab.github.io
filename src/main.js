@@ -8,6 +8,15 @@ import router from './router'
 // import global components
 import BaseContainer from "./components/global/BaseContainer.vue"
 
+// gsap template
+// import { gsap } from "gsap";
+    
+// import { Flip } from "gsap/Flip";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { Draggable } from "gsap/Draggable";
+
+// gsap.registerPlugin(Flip,ScrollTrigger,Draggable);
+
 const app = createApp(App)
 
 app.use(router)

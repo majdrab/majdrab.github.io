@@ -91,6 +91,6 @@
 
 <style scoped>
 .home-environment-2 {
-  @apply absolute bottom-0 right-0 min-w-[1400px];
+  @apply absolute bottom-0 right-0 min-w-[1200px];
 }
 </style>

@@ -6,12 +6,14 @@ import HomeEnvironment2 from '../../svgs/home/HomeEnvironment2.vue';
 import HomeEnvironment3 from '../../svgs/home/HomeEnvironment3.vue';
 import HomeEnvironment4 from '../../svgs/home/HomeEnvironment4.vue';
 
+
 // defineProps({
 //   isFull: {
 //     type: Boolean,
 //     required: false
 //   }
 // })
+
 </script>
 
 <template>
@@ -22,8 +24,6 @@ import HomeEnvironment4 from '../../svgs/home/HomeEnvironment4.vue';
     <HomeEnvironment1 />
     <HomeEnvironment0Tree />
     <HomeEnvironment0Grass />
-    
-    
   </BaseContainer>
 </template>
 

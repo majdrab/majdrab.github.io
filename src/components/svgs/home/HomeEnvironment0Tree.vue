@@ -10,6 +10,6 @@
 
 <style scoped>
 .home-environment-0-tree {
-  @apply absolute top-0 right-0 min-w-[1400px] fill-primary;
+  @apply absolute top-0 right-0 min-w-[1200px] fill-primary;
 }
 </style>

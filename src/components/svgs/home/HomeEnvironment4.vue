@@ -207,7 +207,7 @@
 
 <style scoped>
 .home-environment-4 {
-  @apply absolute bottom-0 right-0 min-w-[1400px];
+  @apply absolute inset-0 min-w-[1200px];
 }
 .home-bg {
   fill:url(#home-bg-gradient);
