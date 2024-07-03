@@ -1,4 +1,6 @@
 <script setup>
+import { ref, onMounted } from 'vue'
+
 defineProps({
   isFull: {
     type: Boolean,
@@ -9,10 +11,20 @@ defineProps({
     required: false
   }
 })
+
+const baseContainer = ref(null)
+
+onMounted(() => {
+  if(!baseContainer.value) console.log('there is no baseContainer')
+})
+// Compiler macros, such as defineExpose, don't need to be imported
+defineExpose({
+  baseContainer,
+})
 </script>
 
 <template>
-  <div class="base-container">
+  <div ref="baseContainer" class="base-container">
     <div :class="[isFull ? 'base-container__full' : 'base-container__content', innerClass]">
       <slot></slot>
     </div>

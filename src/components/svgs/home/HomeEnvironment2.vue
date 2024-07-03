@@ -1,9 +1,19 @@
 <script setup>
+import { ref, onMounted } from 'vue'
 
+const homeSvg2 = ref(null)
+
+onMounted(() => {
+  if(!homeSvg2.value) console.log('there is no homeSvg2')
+})
+// Compiler macros, such as defineExpose, don't need to be imported
+defineExpose({
+  homeSvg2,
+})
 </script>
 
 <template>
-  <svg class="home-environment-2" viewBox="0 0 1920 1080">
+  <svg ref="homeSvg2" class="home-environment-2" viewBox="0 0 1920 1080">
     <g class="clouds-furthest">
       <path class="fill-primary-100" d="M464.72,713.38s65.48-29.5,100.35-5.08c0,0,32.86-27,57.67-5.32,0,0,72.44-37.6,113.25,5.32,0,0,68-11.69,97.8,14.78,0,0,50.17-21.71,78.24,0,0,0,57-21.71,89.29,0,0,0,66.33-16.17,108.85-9.7s65.48,8.9,90.14,5.68,63.78-8.85,79.94,0,23,.71,72.28-5.68,220.82-5.08,220.82-5.08V1080H293.74V723.35S343.11,707.91,373,708.3,464.72,713.38,464.72,713.38Z"/>
     </g>

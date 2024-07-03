@@ -1,9 +1,19 @@
 <script setup>
+import { ref, onMounted } from 'vue'
 
+const homeSvg4 = ref(null)
+
+onMounted(() => {
+  if(!homeSvg4.value) console.log('there is no homeSvg4')
+})
+// Compiler macros, such as defineExpose, don't need to be imported
+defineExpose({
+  homeSvg4,
+})
 </script>
 
 <template>
-  <svg class="home-environment-4" viewBox="0 0 1920 1080">
+  <svg ref="homeSvg4" class="home-environment-4" viewBox="0 0 1920 1080">
     <defs>
       <linearGradient id="home-bg-gradient" x1="890" y1="-202.51" x2="1016.35" y2="1137.68" gradientUnits="userSpaceOnUse"><stop offset="0.22" stop-color="#5b2e58"/><stop offset="0.35" stop-color="#7c3b5e"/><stop offset="0.48" stop-color="#a44a65"/><stop offset="0.69" stop-color="#de7561"/><stop offset="1" stop-color="#fffade"/>
       </linearGradient>
