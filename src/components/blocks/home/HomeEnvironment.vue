@@ -23,21 +23,31 @@ const homeEnv3 = ref(null)
 
 
 onMounted(() => {
-  console.log(homeEnvironment.value.baseContainer)
-  console.log(homeEnv0Grass.value.homeSvg0Grass)
-  console.log(homeEnv0Tree.value.homeSvg0Tree)
-  console.log(homeEnv1.value.homeSvg1)
-  console.log(homeEnv2.value.homeSvg2)
-  console.log(homeEnv3.value.homeSvg3)
-  console.log(homeEnv4.value.homeSvg4)
-  
-  // const tl = gsap.timeline({
-  //   scrollTrigger: {
-  //     trigger: homeEnvironment.value,
-  //     start: 'top top',
-  //     scrub: true
-  //   }
-  // })
+  const hEnvironment = homeEnvironment.value.baseContainer
+  const hEnv0Grass = homeEnv0Grass.value.homeSvg0Grass
+  const hEnv0Tree = homeEnv0Tree.value.homeSvg0Tree
+  const hEnv1 = homeEnv1.value.homeSvg1
+  const hEnv2 = homeEnv2.value.homeSvg2
+  const hEnv3 = homeEnv3.value.homeSvg3
+  const hEnv4 = homeEnv4.value.homeSvg4
+  const hEnvArray = [hEnv0Grass, hEnv0Tree, hEnv1, hEnv2, hEnv3, hEnv4]
+
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: hEnvironment,
+      start: 'top top',
+      scrub: true
+    }
+  })
+
+  hEnvArray.forEach(svg => {
+    const svgSpeed = svg.getAttribute('data-speed')
+
+    tl.to(svg, {
+      y: 20 * svgSpeed,
+      duration: 2
+    }, 0)
+  })
   // gsap.set (homeEnv1, {
   //   scale: 0.5
   // })
@@ -52,12 +62,12 @@ onMounted(() => {
 
 <template>
   <BaseContainer isFull ref="homeEnvironment" class="home-environment">
-    <HomeEnvironment4 ref="homeEnv4" data-speed="0.2" />
-    <HomeEnvironment3 ref="homeEnv3" data-speed="2" />
-    <HomeEnvironment2 ref="homeEnv2" data-speed="4" />
-    <HomeEnvironment1 ref="homeEnv1" data-speed="8" />
-    <HomeEnvironment0Tree ref="homeEnv0Tree" data-speed="10" />
-    <HomeEnvironment0Grass ref="homeEnv0Grass" data-speed="10" />
+    <HomeEnvironment4 ref="homeEnv4" data-speed="15" />
+    <HomeEnvironment3 ref="homeEnv3" data-speed="10" />
+    <HomeEnvironment2 ref="homeEnv2" data-speed="8" />
+    <HomeEnvironment1 ref="homeEnv1" data-speed="5" />
+    <HomeEnvironment0Tree ref="homeEnv0Tree" data-speed="0.2" />
+    <HomeEnvironment0Grass ref="homeEnv0Grass" data-speed="0.2" />
   </BaseContainer>
 </template>
 
