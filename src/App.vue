@@ -1,7 +1,7 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 
-import OpeningAnimation from './components/OpeningAnimation.vue';
+// import OpeningAnimation from './components/OpeningAnimation.vue';
 import VHeader from './components/layout/VHeader.vue';
 import VFooter from './components/layout/VFooter.vue';
 

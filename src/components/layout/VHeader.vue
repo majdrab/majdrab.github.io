@@ -10,7 +10,7 @@
 
 <template>
   <header class="header">
-    <nav class="navigation">
+    <nav class="navigation txt-md">
       <RouterLink to="/" target="_self"><span class="bg-underline">Home</span></RouterLink>
       <RouterLink to="#about" target="_self"><span class="bg-underline">About</span></RouterLink>
       <RouterLink to="#projects" target="_self"><span class="bg-underline">Projects</span></RouterLink>
@@ -20,9 +20,9 @@
 
 <style scoped>
 .header {
-  @apply bg-primary fixed top-0 left-0 z-40 rounded;
+  @apply bg-primary fixed top-0 left-0 z-40 rounded border-green border;
 }
 .navigation {
-  @apply flex flex-col gap-4 py-5 px-4 text-spot uppercase;
+  @apply flex flex-col gap-4 py-5 px-4 text-green-400 uppercase;
 }
 </style>
