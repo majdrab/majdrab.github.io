@@ -1,4 +1,6 @@
 <script setup>
+import AboutTimeline from '../components/blocks/about/about_timeline/AboutTimeline.vue';
+
 // import TheWelcome from '../components/TheWelcome.vue'
 </script>
 
@@ -36,28 +38,9 @@
       </div>
     </BaseContainer>
     <BaseContainer class="about-path">
-      <h2 class="text-gray-100">My Programming Path</h2>
+      <h3 class="text-gray-100">My Programming Path</h3>
       <div class="h-[1px] w-[200px] bg-green-400 my-2"></div>
-      <div class="about-path--before">
-        <p class="">My programming path has begun with the beginning of the year 2022. Being unsatisfied with my pervious career choices made me tackle a new, undiscovered area of web development. Taking a leap of faith, I quit the previous job and started learning.</p>
-        <div class="absolute left-0 bottom-0 w-[2px] h-[calc(100%-12px)] bg-gray-100"></div>
-      </div>
-      <div class="about-path--beginning">
-        <p class="">The beginning of this journey was hard, but exciting. Taking multiple classes about html, css, js and git on the learning platform Udemy worked wonders. With dedication and eagerness of obtaining more programming experience I managed to get an internship at the beginning of the summer that same year, in the company called Hudlajf.</p>
-        <div class="absolute left-0 bottom-0 w-[2px] h-full bg-gray-400"></div>
-      </div>
-      <div class="about-path--hudlajf">
-        <p class="">Working in the Hudlajf team was an awesome experience, and under the tutorship of a menthor my understanding of code has greatly improved. During my time there I got to work with sass and my first js framework, vue, and with it the knowledge of code reusability, components, recursive components and overall organizing my code and the folder structure in applications. In november 2022, after several months our cooperation has sadly ended, because of the company's financial situation.</p>
-      </div>
-      <div class="about-path--jobhunt">
-        <p class="">Through the next three months I have searched for my first proper job as a junior web developer. During that time I have been doing all kinds of smaller projects and improving my vue and js skills. In the beginning of february 2023 an opportunity showed itself and I got the role of junior web developer in the company Humanfrog.</p>
-      </div>
-      <div class="about-path--humanfrog">
-        <p class="">Getting my first developer job was (both hard and exciting at the same time -- not good). When the job interview for a place in Humanfrog team took place I was promised to be able to work with vue, with which I was familiar, but almost all of the work turned out to be in laravel blades and php. While being a bit dissapointed, I was lukcy to get a great menthor and with her help I've learned to work with the given technologies. Working on big, real projects pushed my knowledge to new level and i learned to collaborate with designers and backend developers. But the longer I worked in Humanfrog, the more pressure and negativity </p>
-      </div>
-      <div class="about-path--present">
-        <p class="">Text about after humanfrog - present coming soon!</p>
-      </div>
+      <AboutTimeline />
     </BaseContainer>
   </div>
 </template>
@@ -69,12 +52,19 @@
 .about-intro, 
 .about-path {
   @apply text-gray-300;
-  [class^="about-path--"] {
+}
+.about-intro {
+  @apply pb-4;
+}
+.about-path {
+  .about-path__timeline {
+    @apply flex items-center relative py-6;
+  }
+  [class^="about-path__"]:not(.about-path__timeline) {
     @apply relative py-2;
-    > p {
+    /* > p {
       @apply pl-5;
-
-    }
+    } */
   }
 }
 </style>
