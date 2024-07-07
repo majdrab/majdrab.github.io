@@ -1,6 +1,8 @@
 <script setup>
 // import { computed, ref } from "vue";
-import { computed, ref, watch, nextTick } from "vue";
+import { computed, ref, onMounted } from "vue";
+import { gsap } from "gsap";
+import { useResizeObserver } from "@vueuse/core";
 import aboutTimelineData from '@/data/aboutTimelineData.json';
 
 // DISPLAY
@@ -28,21 +30,20 @@ function setDisplayDirection(idValue) {
 
 // display height transiton
 const displayContainer = ref(null);
-const containerHeight = ref('auto');
+const displayContent = ref(null);
 
-const updateDisplayHeight = async () => {
-  await nextTick();
-  if (displayContainer.value) {
-    containerHeight.value = displayContainer.value.offsetHeight + 'px';
-    console.log(containerHeight.value)
-  }
-};
-const clearDisplayHeight = () => {
-  containerHeight.value = 'auto';
-};
-
-watch(() => timelineDisplayId.value, updateDisplayHeight);
-
+onMounted(() => {
+  // Use useResizeObserver to monitor height changes of the child element
+  useResizeObserver(displayContent, (entries) => {
+    // Animate the container element's height change using GSAP
+    if (displayContainer.value) {
+      gsap.to(displayContainer.value, {
+        height: entries[0].contentRect.height,
+        duration: 0.1,
+      });
+    }
+  });
+});
 </script>
 
 <template>
@@ -65,9 +66,9 @@ watch(() => timelineDisplayId.value, updateDisplayHeight);
         <div class="h-3 w-3 rounded-full bg-primary"></div>
       </button>
     </div>
-    <div class="about-timeline__display" :class="{'display-direction-change': displayDirectionForward }" :style="{ height: containerHeight }">
-      <Transition mode="out-in" @before-enter="clearDisplayHeight" @after-enter="updateDisplayHeight">
-        <div v-if="currentDisplay" :key="currentDisplay.id" ref="displayContainer">
+    <div ref="displayContainer" class="about-timeline__display" :class="{'display-direction-change': displayDirectionForward }">
+      <Transition mode="out-in">
+        <div v-if="currentDisplay" :key="currentDisplay.id" ref="displayContent">
           <p v-for="(text, index) in currentDisplay.text" :key="index" class="pb-3">{{ text }}</p>
         </div>
       </Transition>
