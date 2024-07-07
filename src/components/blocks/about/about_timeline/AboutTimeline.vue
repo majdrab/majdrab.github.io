@@ -39,7 +39,7 @@ onMounted(() => {
     if (displayContainer.value) {
       gsap.to(displayContainer.value, {
         height: entries[0].contentRect.height,
-        duration: 0.1,
+        duration: 0.2,
       });
     }
   });
@@ -82,13 +82,9 @@ onMounted(() => {
     @apply flex items-center relative py-6;
   }
   .about-timeline__display {
-    transition: height 0.3s ease-in-out;
     .v-enter-active,
     .v-leave-active {
       transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    }
-    > div {
-      transition: height 0.3s ease-in-out;
     }
     .v-enter-from,
     .v-leave-to {
