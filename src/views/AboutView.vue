@@ -47,7 +47,7 @@ import AboutTimeline from '../components/blocks/about/about_timeline/AboutTimeli
 
 <style scoped>
 #about {
-  @apply pt-10 pb-14 relative min-h-screen bg-primary;
+  @apply pt-10 pb-14 relative bg-primary;
 }
 .about-intro, 
 .about-path {
