@@ -1,9 +1,13 @@
 <script setup>
 // import { computed, ref } from "vue";
 import { computed, ref, onMounted } from "vue";
-import { gsap } from "gsap";
 import { useResizeObserver } from "@vueuse/core";
 import aboutTimelineData from '@/data/aboutTimelineData.json';
+import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// gsap.registerPlugin(ScrollTrigger);
+
+
 import resolveConfig from 'tailwindcss/resolveConfig'
 import tailwindConfig from '../../../../../tailwind.config'
 
@@ -15,44 +19,46 @@ const displayId = ref(0)
 
 function onButtonClick(id) {
   setDisplayDirection(id)
-  getIdDifference(id)
   displayId.value = id
+  animateButton()
+  getLineLeftOffset()
   animateLine()
+  
 }
 
 // LINE 
-const lineLength = ref(2)
+const lineLength = ref(0)
 aboutTimelineData.forEach(el => {
   lineLength.value = lineLength.value + el.duration
 });
 
-const idDifference = ref(0)
-function getIdDifference(idValue) {
-  idDifference.value = Math.abs(displayId.value - idValue)
-}
-
 const button = ref(null)
 const buttonInner = ref(null)
-const lineGreen = ref(null)
 function animateButton() {
   if(button.value && buttonInner.value) {
     gsap.to(buttonInner.value, {backgroundColor: theme.colors.primary.DEFAULT})
-    gsap.to(buttonInner.value[displayId.value], {backgroundColor: theme.colors.green[300]}, "<")
+    gsap.to(buttonInner.value[displayId.value], {backgroundColor: theme.colors.green[400]})
   }
-  
-  // const tl = gsap.timeline()
-  // if(button.value && buttonInner.value) {
-  //   tl.to(buttonInner.value, {backgroundColor: theme.colors.primary.DEFAULT})
-  //   tl.to(buttonInner.value[displayId.value], {backgroundColor: theme.colors.green[300]}, "<")
-    // console.log(button.value[displayId.value])
-    // console.log(buttonInner.value[displayId.value])
+}
+const activeLine = ref(null)
+const lineLeftOffset = ref(0)
+function getLineLeftOffset() {
+  let sumDurationBefore = 0
+  aboutTimelineData.forEach(el => {
+    if(el.id < displayId.value) {
+      sumDurationBefore = sumDurationBefore + el.duration
+    }
+  });
+  lineLeftOffset.value = sumDurationBefore
 }
 function animateLine() {
-  if(lineGreen.value) {
-    gsap.to(lineGreen.value[0], {width: '100%'})
+  if(activeLine.value) {
+    gsap.to(activeLine.value, {
+      width: currentDisplay.value.duration/lineLength.value*100 + '%', 
+      left: lineLeftOffset.value/lineLength.value*100 + '%'
+    })
   }
 }
-
 
 // DISPLAY
 const currentDisplay = computed(() => {
@@ -85,20 +91,31 @@ onMounted(() => {
       });
     }
   });
+  getLineLeftOffset()
   animateButton()
+  animateLine()
 });
 </script>
 
 <template>
   <div class="about-timeline">
     <div class="about-timeline__line">
-      <div class="h-[2px] bg-green-300" :style="'width: ' + 2/lineLength*100 + '%;'"></div>
+      <div class="relative w-full border-b-[3px] border-gray-200 h-6">
+        <div class="absolute bottom-0 w-[2px] h-5 bg-gray-200"><h4 class="text-gray-200 absolute -top-7 -left-6">2022</h4></div>
+        <div class="absolute bottom-0 w-[1px] h-4 bg-gray-200" :style="`left: ${6/lineLength*100}%;`"></div>
+        <div class="absolute bottom-0 w-[2px] h-5 bg-gray-200" :style="`left: ${12/lineLength*100}%;`"><h4 class="text-gray-200 absolute -top-7 -left-6">2023</h4></div>
+        <div class="absolute bottom-0 w-[1px] h-4 bg-gray-200" :style="`left: ${18/lineLength*100}%;`"></div>
+        <div class="absolute bottom-0 w-[2px] h-5 bg-gray-200" :style="`left: ${24/lineLength*100}%;`"><h4 class="text-gray-200 absolute -top-7 -left-6">2024</h4></div>
+        <div class="absolute bottom-0 w-[1px] h-4 bg-gray-200" :style="`left: ${30/lineLength*100}%;`"></div>
+      </div>
+      <div ref="activeLine" class="h-[9px] absolute -bottom-[3px] bg-green-400 rounded"></div>
+    </div>
+    <div class="about-timeline__middle">
       <template v-for="singleTimeline in aboutTimelineData" :key="singleTimeline.id">
-        <button ref="button" @click="onButtonClick(singleTimeline.id)" class="flex items-center justify-center flex-none h-5 w-5 rounded-full bg-gray-200">
-          <div ref="buttonInner" class="h-3 w-3 rounded-full bg-primary"></div>
-        </button>
-        <div class="h-[2px] bg-gray-200" :style="'width: ' + singleTimeline.duration/lineLength*100 + '%;'">
-          <div ref="lineGreen" class="h-full w-0 bg-green-300"></div>
+        <div class="flex items-center justify-center" :style="'width: ' + singleTimeline.duration/lineLength*100 + '%;'">
+          <button ref="button" @click="onButtonClick(singleTimeline.id)" class="flex items-center justify-center h-5 w-5 rounded-full bg-green-400 hover:bg-green-300 transition-colors">
+            <div ref="buttonInner" class="h-3 w-3 rounded-full bg-primary"></div>
+          </button>
         </div>
       </template>
     </div>
@@ -115,7 +132,10 @@ onMounted(() => {
 <style scoped>
 .about-timeline {
   .about-timeline__line {
-    @apply flex items-center relative py-6;
+    @apply relative mt-10 mb-6 mx-6;
+  }
+  .about-timeline__middle {
+    @apply flex items-center my-8 mx-6;
   }
   .about-timeline__display {
     .v-enter-active,
