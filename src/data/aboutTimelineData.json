@@ -3,6 +3,7 @@
     "id": 0,
     "title": "The Beginning",
     "time": "january 2022",
+    "duration": 5,
     "text": [
       "My programming path has begun with the beginning of the year 2022. Being unsatisfied with my pervious career choices made me tackle a new, undiscovered area of web development. Taking a leap of faith, I quit the previous job and started learning.", 
       "The start of this journey was hard, but exciting. Taking multiple classes about html, css, js and git on the learning platform Udemy worked wonders. With dedication and eagerness of obtaining more programming experience I managed to get an internship at the beginning of the summer that same year, in the company called Hudlajf."
@@ -13,6 +14,7 @@
     "id": 1,
     "title": "Hudlajf",
     "time": "june 2022",
+    "duration": 8,
     "text": [
       "Working in the Hudlajf team was an awesome experience, and under the tutorship of a menthor my understanding of code has greatly improved. During my time there I got to work with sass and my first js framework, vue, and with it the knowledge of code reusability, components, recursive components, overall organization of my code and the folder structure in applications.", 
       "In november 2022, after several months our cooperation has sadly ended, because of the company's financial situation. For the next three months I have searched for my first proper job as a junior web developer and worked on improving my vue and js skills."
@@ -23,6 +25,7 @@
     "id": 2,
     "title": "Humanfrog",
     "time": "february 2023",
+    "duration": 12,
     "text": [
       "In the beginning of february 2023 an opportunity showed itself and I got the role of junior web developer in the company Humanfrog.", 
       "Getting my first developer job was great and educational. While I was promised to be able to work with vue, which I was familiar with, I have worked mostly in laravel blades and php. Not being sure how I felt about it, I was lukcy to get a great menthor and with her help I've learned to work with the given technologies. Working on big, real projects pushed my knowledge to new level and I learned to collaborate with designers and backend developers. Near the end of the year 2023 we started using tailwind on new projects, which I grew to like a lot.", 
@@ -34,6 +37,7 @@
     "id": 3,
     "title": "Present",
     "time": "february 2024",
+    "duration": 6,
     "text": ["Text about after humanfrog - present coming soon!"],
     "knowledge": ["vue", "tailwind", "gsap", "git"]
   }

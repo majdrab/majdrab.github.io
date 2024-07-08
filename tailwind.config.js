@@ -2,7 +2,7 @@
 /*eslint-env node*/
 
 /** @type {import('tailwindcss').Config} */
-const plugin = require('tailwindcss/plugin')
+import plugin from 'tailwindcss/plugin'
 
 import defaultTheme from 'tailwindcss/defaultTheme';
 
