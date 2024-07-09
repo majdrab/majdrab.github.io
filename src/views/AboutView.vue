@@ -1,5 +1,5 @@
 <script setup>
-import AboutTimeline from '../components/blocks/about/about_timeline/AboutTimeline.vue';
+import AboutTimeline from '../components/blocks/about/AboutTimeline.vue';
 
 // import TheWelcome from '../components/TheWelcome.vue'
 </script>
@@ -51,7 +51,7 @@ import AboutTimeline from '../components/blocks/about/about_timeline/AboutTimeli
 }
 .about-intro, 
 .about-path {
-  @apply text-gray-300;
+  @apply text-gray-200;
 }
 .about-intro {
   @apply pb-4;

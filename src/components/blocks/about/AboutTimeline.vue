@@ -9,7 +9,7 @@ import { gsap } from "gsap";
 
 
 import resolveConfig from 'tailwindcss/resolveConfig'
-import tailwindConfig from '../../../../../tailwind.config'
+import tailwindConfig from '../../../../tailwind.config'
 
 const { theme } = resolveConfig(tailwindConfig)
 
@@ -122,7 +122,7 @@ onMounted(() => {
     <div ref="displayContainer" class="about-timeline__display" :class="{'display-direction-change': displayDirectionForward }">
       <Transition mode="out-in">
         <div v-if="currentDisplay" :key="currentDisplay.id" ref="displayContent">
-          <p v-for="(text, index) in currentDisplay.text" :key="index" class="pb-3">{{ text }}</p>
+          <p v-for="(text, index) in currentDisplay.text" :key="index" class="pb-3 text-gray-200">{{ text }}</p>
         </div>
       </Transition>
     </div>
