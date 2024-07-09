@@ -8,7 +8,7 @@ import AboutTimeline from '../components/blocks/about/about_timeline/AboutTimeli
   <div id="about">
     <BaseContainer class="about-intro">
       <h1 class="text-gray-100">About Me</h1>
-      <div class="h-[1px] w-[200px] bg-green-400 my-2"></div>
+      <BaseDivider />
       <div class="grid grid-cols-3 gap-4">
         <div class="col-span-3 lg:col-span-2">
           <p class="pb-2">I'm Maj Drab, a 29-year-old Slovenian junior Front-end developer. Currently in the process of gaining more programming knowledge and doing all kinds of projects.</p>
@@ -39,7 +39,7 @@ import AboutTimeline from '../components/blocks/about/about_timeline/AboutTimeli
     </BaseContainer>
     <BaseContainer class="about-path">
       <h3 class="text-gray-100">My Programming Path</h3>
-      <div class="h-[1px] w-[200px] bg-green-400 my-2"></div>
+      <BaseDivider />
       <AboutTimeline />
     </BaseContainer>
   </div>
