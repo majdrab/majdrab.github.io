@@ -13,7 +13,8 @@
     }
   } */
 
-  a {
+  a,
+  button {
     &:hover {
       > .bg-underline,
       &.bg-underline {

@@ -122,6 +122,8 @@ onMounted(() => {
     <div ref="displayContainer" class="about-timeline__display" :class="{'display-direction-change': displayDirectionForward }">
       <Transition mode="out-in">
         <div v-if="currentDisplay" :key="currentDisplay.id" ref="displayContent">
+          <h4 class="text-gray-100">{{ currentDisplay.title }}</h4>
+          <p class="text-gray-300 pt-1 pb-3">{{ currentDisplay.time }}</p>
           <p v-for="(text, index) in currentDisplay.text" :key="index" class="pb-3 text-gray-200">{{ text }}</p>
         </div>
       </Transition>

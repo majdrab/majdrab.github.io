@@ -1,34 +1,72 @@
 [
-  [
-    {
-      "id": "0",
-      "name": "LagunaMed"
-    }
-  ],
-  [
-    {
-      "id": "0",
-      "name": "Interactive Rating Component",
-      "image": "./images/projects/3.jpg",
-      "langsUsed": ["html", "css", "js"]
-    },
-    {
-      "id": "1",
-      "name": "Random Color Boxes",
-      "image": "./images/projects/2.jpg",
-      "langsUsed": ["html", "css", "js"]
-    },
-    {
-      "id": "2",
-      "name": "Score Keeper",
-      "image": "./images/projects/1.jpg",
-      "langsUsed": ["html", "css", "js"]
-    },
-    {
-      "id": "3",
-      "name": "Pricing Panel",
-      "image": "./images/projects/0.jpg",
-      "langsUsed": ["html", "css"]
-    }
-  ]
+  {
+    "humanfrog": [
+      {
+        "id": "0",
+        "name": "LagunaMed",
+        "description": "here goes a short project description text"
+      },
+      {
+        "id": "1",
+        "name": "Humanfrog",
+        "description": "here goes a short project description text"
+      },
+      {
+        "id": "2",
+        "name": "Sonce Mjob",
+        "description": "here goes a short project description text"
+      },
+      {
+        "id": "3",
+        "name": "Pisma",
+        "description": "here goes a short project description text"
+      },
+      {
+        "id": "4",
+        "name": "Prvič Mama",
+        "description": "here goes a short project description text"
+      },
+      {
+        "id": "5",
+        "name": "Šeško - PvCon",
+        "description": "here goes a short project description text"
+      },
+      {
+        "id": "6",
+        "name": "Zumo App",
+        "description": "here goes a short project description text"
+      },
+      {
+        "id": "7",
+        "name": "Fist",
+        "description": "here goes a short project description text"
+      }
+    ],
+    "beginning": [
+      {
+        "id": "0",
+        "name": "Interactive Rating Component",
+        "image": "./images/projects/3.jpg",
+        "langsUsed": ["html", "css", "js"]
+      },
+      {
+        "id": "1",
+        "name": "Random Color Boxes",
+        "image": "./images/projects/2.jpg",
+        "langsUsed": ["html", "css", "js"]
+      },
+      {
+        "id": "2",
+        "name": "Score Keeper",
+        "image": "./images/projects/1.jpg",
+        "langsUsed": ["html", "css", "js"]
+      },
+      {
+        "id": "3",
+        "name": "Pricing Panel",
+        "image": "./images/projects/0.jpg",
+        "langsUsed": ["html", "css"]
+      }
+    ]
+  }
 ]
