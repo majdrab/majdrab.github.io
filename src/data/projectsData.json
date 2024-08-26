@@ -4,42 +4,51 @@
       {
         "id": "0",
         "name": "LagunaMed",
-        "description": "here goes a short project description text"
+        "link": "",
+        "logo": "/img/projects/humanfrog/lagunamed/logo.svg",
+        "image": "/img/projects/humanfrog/lagunamed/0.png"
       },
       {
         "id": "1",
-        "name": "Humanfrog",
-        "description": "here goes a short project description text"
+        "name": "Humanfrog Homepage",
+        "link": "",
+        "logo": "/img/projects/humanfrog/humanfrog/logo.svg",
+        "image": "/img/projects/humanfrog/humanfrog/0.png"
       },
       {
         "id": "2",
-        "name": "Sonce Mjob",
-        "description": "here goes a short project description text"
+        "name": "Pisma",
+        "link": "",
+        "logo": "/img/projects/humanfrog/pisma/logo.png",
+        "image": "/img/projects/humanfrog/pisma/0.png"
       },
       {
         "id": "3",
-        "name": "Pisma",
-        "description": "here goes a short project description text"
+        "name": "Prvič Mama",
+        "link": "",
+        "logo": "/img/projects/humanfrog/prvic_mama/logo.png",
+        "image": "/img/projects/humanfrog/prvic_mama/0.png"
       },
       {
         "id": "4",
-        "name": "Prvič Mama",
-        "description": "here goes a short project description text"
+        "name": "PvCon",
+        "link": "",
+        "logo": "/img/projects/humanfrog/pvcon/logo.svg",
+        "image": "/img/projects/humanfrog/pvcon/0.png"
       },
       {
         "id": "5",
-        "name": "Šeško - PvCon",
-        "description": "here goes a short project description text"
+        "name": "Zumo App",
+        "link": "",
+        "logo": "/img/projects/humanfrog/zumoapp/logo.svg",
+        "image": "/img/projects/humanfrog/zumoapp/0.png"
       },
       {
         "id": "6",
-        "name": "Zumo App",
-        "description": "here goes a short project description text"
-      },
-      {
-        "id": "7",
         "name": "Fist",
-        "description": "here goes a short project description text"
+        "link": "",
+        "logo": "/img/projects/humanfrog/fist/logo.png",
+        "image": "/img/projects/humanfrog/fist/0.png"
       }
     ],
     "beginning": [

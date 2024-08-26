@@ -5,31 +5,45 @@ defineProps({
     type: String,
     required: true
   },
-  description: {
+  link: {
     type: String,
-    required: true
+    default: ""
+  },
+  logo: {
+    type: String,
+    default: ""
+  },
+  image: {
+    type: String,
+    default: ""
   }
 })
 </script>
 
 <template>
   <button class="single-project">
-    <h4 class=" pb-1 text-green border-b-2 border-green">{{ name }}</h4>
-    <div class="pb-3 bg-primary-100/60">
-      <p>{{ description }}</p>
-      <div></div>
+    <!-- <h4 class=" pb-1 text-green border-b-2 border-green">{{ name }}</h4> -->
+    <img :src="image" alt="project thumbnail photo" class="absolute inset-0 object-cover h-full w-full opacity-20 pointer-events-none v-transition">
+    <div class="flex items-center justify-center relative w-full h-full">
+      <img :src="logo" alt="logo" class="w-[70%] v-transition">
     </div>
+    <div class="single-project__bottom-line absolute bottom-0 left-0 bg-green-200 h-1 w-0 v-transition"></div>
   </button>
 </template>
 
 <style scoped>
 .single-project {
-  @apply relative pt-16 text-left bg-gray-100 rounded overflow-hidden transition-all;
-  > * {
-    @apply px-4;
-  }
+  @apply relative bg-gray-100 overflow-hidden transition-all aspect-[3/2];
   &:hover {
-    @apply rounded-lg;
+    > img {
+      @apply scale-110 opacity-80;
+    }
+    > div > img {
+      @apply scale-75 opacity-0 -translate-y-4;
+    }
+    .single-project__bottom-line {
+      @apply w-full;
+    }
   }
 }
 </style>
