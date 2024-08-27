@@ -10,15 +10,15 @@
       },
       {
         "id": "1",
-        "name": "Humanfrog Homepage",
-        "link": "",
+        "name": "Humanfrog Veeam & inquiry",
+        "link": "https://www.humanfrog.com/en/veeam",
         "logo": "/img/projects/humanfrog/humanfrog/logo.svg",
         "image": "/img/projects/humanfrog/humanfrog/0.png"
       },
       {
         "id": "2",
         "name": "Pisma",
-        "link": "",
+        "link": "https://pisma.org/",
         "logo": "/img/projects/humanfrog/pisma/logo.png",
         "image": "/img/projects/humanfrog/pisma/0.png"
       },
@@ -32,14 +32,14 @@
       {
         "id": "4",
         "name": "PvCon",
-        "link": "",
+        "link": "https://pvcon.si/sl",
         "logo": "/img/projects/humanfrog/pvcon/logo.svg",
         "image": "/img/projects/humanfrog/pvcon/0.png"
       },
       {
         "id": "5",
         "name": "Zumo App",
-        "link": "",
+        "link": "https://app.zumo.tech/",
         "logo": "/img/projects/humanfrog/zumoapp/logo.svg",
         "image": "/img/projects/humanfrog/zumoapp/0.png"
       },

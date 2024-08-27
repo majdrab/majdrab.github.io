@@ -8,7 +8,7 @@ import SingleProject from '../components/blocks/projects/SingleProject.vue';
     <BaseContainer>
       <h1 class="text-gray-100">Projects</h1>
       <BaseDivider />
-      <p class="text-gray-200 pb-6">Nek uvodni tekst</p>
+      <!-- <p class="text-gray-200 pb-6">Nek uvodni tekst</p> -->
       <h2 class="text-gray-100 pb-3">Humanfrog</h2>
       <p class="text-gray-200 pb-3">Projects at Humanfrog were done mostly in laravel blades, sass, tailwind and javascript.</p>
       <p class="text-gray-200 pb-3">Some of these projects have either not been made public yet or have been outdated and taken down, and therefore have no link to a webpage.</p>
