@@ -142,13 +142,13 @@ export default {
     plugin(function({ addComponents, addUtilities }) {
       addComponents({
         '.btn': {
-          padding: '9px 18px',
-          borderRadius: '46px',
+          // padding: '9px 18px',
+          // borderRadius: '46px',
           fontFamily: 'theme("fontFamily.bold")',
           display: 'inline-flex',
           justifyContent: 'center',
           gap: '10px',
-          transition: 'all 0.3s ease-in-out',
+          // transition: 'all 0.3s ease-in-out',
           overflow: 'hidden',
         },
         '.btn-blue': {

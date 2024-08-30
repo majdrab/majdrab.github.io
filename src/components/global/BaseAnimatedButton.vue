@@ -1,7 +1,7 @@
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 
-const buttonAnimated = ref(null)
+const baseAnimatedButton = ref(null)
 const animatedEllipse = ref(null)
 
 const animateEnter = (e) => {
@@ -22,11 +22,19 @@ const animateLeave = (e) => {
     animatedEllipse.value.classList.add( 'deplode' )
   }
 }
+
+onMounted(() => {
+  if(!baseAnimatedButton.value) console.log('there is no baseAnimatedButton')
+})
+// Compiler macros, such as defineExpose, don't need to be imported
+defineExpose({
+  baseAnimatedButton,
+})
 </script>
 
 <template>
   <button 
-    ref="buttonAnimated" 
+    ref="baseAnimatedButton" 
     class="btn-animated" 
     @mouseenter="animateEnter" 
     @mouseleave="animateLeave"
@@ -59,8 +67,8 @@ const animateLeave = (e) => {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 95%;
-    height: 95%;
+    width: 85%;
+    height: 85%;
     border-radius: 50%;
   }
 

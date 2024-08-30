@@ -33,11 +33,14 @@ aboutTimelineData.forEach(el => {
 });
 
 const button = ref(null)
-const buttonInner = ref(null)
 function animateButton() {
-  if(button.value && buttonInner.value) {
-    gsap.to(buttonInner.value, {backgroundColor: theme.colors.primary.DEFAULT})
-    gsap.to(buttonInner.value[displayId.value], {backgroundColor: theme.colors.green[400]})
+  if(button.value) {
+    console.log(button.value[displayId.value].baseAnimatedButton)
+    aboutTimelineData.forEach(el => {
+      gsap.to(button.value[el.id].baseAnimatedButton, {backgroundColor: theme.colors.green.DEFAULT, duration: 0})
+    });
+    // gsap.to(button.value.baseAnimatedButton, {backgroundColor: theme.colors.green.DEFAULT})
+    gsap.to(button.value[displayId.value].baseAnimatedButton, {backgroundColor: theme.colors.green[400]})
   }
 }
 const activeLine = ref(null)
@@ -99,7 +102,6 @@ onMounted(() => {
 
 <template>
   <div class="about-timeline">
-    <BaseAnimatedButton ref="button" @click="onButtonClick(singleTimeline.id)">hah</BaseAnimatedButton>
     <div class="about-timeline__line">
       <div class="relative w-full border-b-[3px] border-gray-200 h-6">
         <div class="absolute bottom-0 w-[2px] h-5 bg-gray-200"><h4 class="text-gray-200 absolute -top-7 -left-6">2022</h4></div>
@@ -114,10 +116,9 @@ onMounted(() => {
     <div class="about-timeline__middle">
       <template v-for="singleTimeline in aboutTimelineData" :key="singleTimeline.id">
         <div class="flex items-center justify-center" :style="'width: ' + singleTimeline.duration/lineLength*100 + '%;'">
-          <button ref="button" @click="onButtonClick(singleTimeline.id)" class="flex items-center justify-center h-5 w-5 rounded-full bg-green-400 hover:bg-green-300 transition-colors">
-            <div ref="buttonInner" class="h-3 w-3 rounded-full bg-primary"></div>
-          </button>
-          <!-- <BaseAnimatedButton ref="button" @click="onButtonClick(singleTimeline.id)"/> -->
+          <BaseAnimatedButton ref="button" class="max-2xl:w-8 max-2xl:h-8 max-2xl:rounded-full 2xl:px-[18px] 2xl:py-[9px] 2xl:rounded-[46px]" @click="onButtonClick(singleTimeline.id)">
+            <span class="max-2xl:hidden">{{ singleTimeline.title }}</span>
+          </BaseAnimatedButton>
         </div>
       </template>
     </div>

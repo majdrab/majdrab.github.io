@@ -37,7 +37,7 @@
     "id": 3,
     "title": "Present",
     "time": "february 2024",
-    "duration": 6,
+    "duration": 7,
     "text": ["Text about after humanfrog - present coming soon!"],
     "knowledge": ["vue", "tailwind", "gsap", "git"]
   }

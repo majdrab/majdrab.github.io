@@ -39,7 +39,7 @@ import AboutTimeline from '../components/blocks/about/AboutTimeline.vue';
     </BaseContainer>
     <BaseContainer class="about-path">
       <h3 class="text-gray-100">My Programming Path</h3>
-      <BaseDivider />
+      <!-- <BaseDivider /> -->
       <AboutTimeline />
     </BaseContainer>
   </section>
