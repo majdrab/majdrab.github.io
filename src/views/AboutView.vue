@@ -5,7 +5,7 @@ import AboutTimeline from '../components/blocks/about/AboutTimeline.vue';
 </script>
 
 <template>
-  <div id="about">
+  <section id="about">
     <BaseContainer class="about-intro">
       <h1 class="text-gray-100">About Me</h1>
       <BaseDivider />
@@ -42,7 +42,7 @@ import AboutTimeline from '../components/blocks/about/AboutTimeline.vue';
       <BaseDivider />
       <AboutTimeline />
     </BaseContainer>
-  </div>
+  </section>
 </template>
 
 <style scoped>

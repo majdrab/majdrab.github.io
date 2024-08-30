@@ -4,7 +4,7 @@ import SingleProject from '../components/blocks/projects/SingleProject.vue';
 </script>
 
 <template>
-  <div id="projects">
+  <section id="projects">
     <BaseContainer>
       <h1 class="text-gray-100">Projects</h1>
       <BaseDivider />
@@ -23,7 +23,7 @@ import SingleProject from '../components/blocks/projects/SingleProject.vue';
         />
       </div>
     </BaseContainer>
-  </div>
+  </section>
 </template>
 
 <style scoped>

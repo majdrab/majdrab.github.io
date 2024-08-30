@@ -99,6 +99,7 @@ onMounted(() => {
 
 <template>
   <div class="about-timeline">
+    <BaseAnimatedButton ref="button" @click="onButtonClick(singleTimeline.id)">hah</BaseAnimatedButton>
     <div class="about-timeline__line">
       <div class="relative w-full border-b-[3px] border-gray-200 h-6">
         <div class="absolute bottom-0 w-[2px] h-5 bg-gray-200"><h4 class="text-gray-200 absolute -top-7 -left-6">2022</h4></div>
@@ -116,6 +117,7 @@ onMounted(() => {
           <button ref="button" @click="onButtonClick(singleTimeline.id)" class="flex items-center justify-center h-5 w-5 rounded-full bg-green-400 hover:bg-green-300 transition-colors">
             <div ref="buttonInner" class="h-3 w-3 rounded-full bg-primary"></div>
           </button>
+          <!-- <BaseAnimatedButton ref="button" @click="onButtonClick(singleTimeline.id)"/> -->
         </div>
       </template>
     </div>

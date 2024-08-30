@@ -133,7 +133,7 @@ export default {
       },
       gridTemplateColumns: gridAutoFills,
       backgroundImage: {
-        'gradient-primary': 'linear-gradient(89deg, theme("colors.primary.DEFAULT") 0.2%, theme("colors.link.DEFAULT") 99.48%)',
+        'gradient-primary': 'linear-gradient(89deg, theme("colors.primary.DEFAULT") 0.2%, theme("colors.green.DEFAULT") 99.48%)',
       },
     },
   },
@@ -144,7 +144,7 @@ export default {
         '.btn': {
           padding: '9px 18px',
           borderRadius: '46px',
-          fontFamily: 'RobotoCondensed-Bold',
+          fontFamily: 'theme("fontFamily.bold")',
           display: 'inline-flex',
           justifyContent: 'center',
           gap: '10px',
@@ -167,13 +167,7 @@ export default {
           color: 'theme("colors.link.dark")',
           '&:hover': {
             color: 'theme("colors.primary.DEFAULT")',
-          },
-          '.animated-ellipse': {
-            backgroundColor: 'theme("colors.link.dark") !important',
-            'div': {
-              backgroundColor: 'theme("colors.link.dark") !important',
-            }
-          },
+          }
         },
       })
       addUtilities({
