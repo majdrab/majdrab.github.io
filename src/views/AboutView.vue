@@ -19,7 +19,7 @@ import AboutTimeline from '../components/blocks/about/AboutTimeline.vue';
           <p>I'm actively looking for a job.</p>
           <a class="bg-underline text-green-400"
               target="_blank"
-              href=""
+              href="/cv/DrabMajCV_2024_eng.pdf"
             >
             Check out my CV
           </a>
@@ -47,7 +47,7 @@ import AboutTimeline from '../components/blocks/about/AboutTimeline.vue';
 
 <style scoped>
 #about {
-  @apply pt-10 pb-14 relative bg-primary overflow-hidden;
+  @apply pt-10 pb-6 relative bg-primary overflow-hidden;
 }
 .about-intro, 
 .about-path {

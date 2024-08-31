@@ -133,7 +133,7 @@ export default {
       },
       gridTemplateColumns: gridAutoFills,
       backgroundImage: {
-        'gradient-primary': 'linear-gradient(89deg, theme("colors.primary.DEFAULT") 0.2%, theme("colors.green.DEFAULT") 99.48%)',
+        'gradient-primary': 'linear-gradient(89deg, theme("colors.green.300") 0.2%, theme("colors.green.DEFAULT") 99.48%)',
       },
     },
   },
