@@ -17,9 +17,9 @@ onMounted(() => {
       <text x="50%" y="50%" dy="1rem" text-anchor="middle">
         Maj Drab
       </text>
-      <text x="50%" y="50%" dy="1rem" text-anchor="middle">
+      <!-- <text x="50%" y="50%" dy="1rem" text-anchor="middle">
         Maj Drab
-      </text>
+      </text> -->
     </svg>
   </div>
 </template>
