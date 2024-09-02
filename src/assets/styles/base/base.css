@@ -27,6 +27,21 @@ input {
   @apply border-none bg-transparent outline-none;
 }
 
+::-webkit-scrollbar {
+  @apply w-3;
+}
+::-webkit-scrollbar-track {
+  @apply bg-primary;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-green rounded;
+  &:hover {
+    @apply bg-green-400;
+  }
+  &:active {
+    @apply bg-green-300;
+  }
+}
 /* :root {
   
 } */
