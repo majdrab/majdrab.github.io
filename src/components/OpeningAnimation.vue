@@ -2,6 +2,8 @@
 // import TheWelcome from '../components/TheWelcome.vue'
 import { ref, onMounted } from "vue";
 
+import { gsap } from "gsap";
+
 const isVisible = ref(true)
 
 onMounted(() => {

@@ -48,15 +48,6 @@ onMounted(() => {
       duration: 2
     }, 0)
   })
-  // gsap.set (homeEnv1, {
-  //   scale: 0.5
-  // })
-  // if(homeEnvironment.value) {
-    // console.log(homeEnvironment.value)
-    // homeEnvironment.value.classList.add('haha')
-    // console.log(homeEnvironment.value)
-  // }
-  
 })
 </script>
 
