@@ -9,26 +9,18 @@ import AboutTimeline from '../components/blocks/about/AboutTimeline.vue';
     <BaseContainer class="about-intro">
       <h1 class="text-gray-100">About Me</h1>
       <BaseDivider />
-      <div class="grid grid-cols-4 gap-4">
-        <div class="col-start-1 col-span-4 lg:col-start-2 lg:col-span-3">
-          <p class="pb-2">I'm Maj Drab, a 29-year-old Slovenian junior Front-end developer. Currently in the process of gaining more programming knowledge with online courses and working on this webpage.</p>
-          <p class="pb-2">I like to resolve design problems, create smart user interface and imagine useful interaction, developing rich web experiences & web applications.</p>
-          <p class="pb-2">When not working or futzing around with code, I love to play D&D, video and board games, go to music festivals or simply enjoy a walk in the woods.</p>
+      <div class="grid grid-cols-6 gap-4 pt-2">
+        <div class="bg-green px-5 py-5 rounded row-start-1 col-start-1 col-span-6 lg:col-span-4">
+          <p class="">I'm Maj Drab, a 29-year-old Slovenian junior Front-end developer. Currently in the process of gaining more programming knowledge with the help of online courses.</p>
         </div>
-        <!-- <div class="max-lg:hidden aspect-square">
-          <img src="/img/Maj.png" alt="portrait image" class="object-cover h-full w-full">
-        </div> -->
-      </div>
-      <div class="lg:hidden">
-        <p>I'm actively looking for a job.</p>
-        <p>
-          <a class="bg-underline text-spot"
-            target="_blank"
-            href=""
-          >
-          Check out my CV
-          </a>
-        </p>
+        <div class="bg-green px-5 py-5 rounded rounded-tr-3xl row-start-1 col-start-6 col-span-1 max-lg:hidden"></div>
+        <div class="bg-green-400 px-5 py-5 rounded row-start-2 col-start-1 col-span-6 lg:col-start-3 lg:col-span-4">
+          <p class="">I like to resolve design problems, create smart user interface and imagine useful interaction, developing rich web experiences & web applications.</p>
+        </div>
+        <div class="bg-green-300 px-5 py-5 rounded rounded-bl-3xl row-start-2 row-span-2 col-start-1 col-span-1 max-lg:hidden"></div>
+        <div class="bg-green-300 px-5 py-5 rounded row-start-3 col-start-1 col-span-6 lg:col-start-2 lg:col-span-4">
+          <p class="">When not working or futzing around with code, I love to play D&D, video and board games, go to music festivals or simply enjoy a walk in the woods.</p>
+        </div>
       </div>
     </BaseContainer>
     <BaseContainer isFull class="about-cta">
@@ -65,9 +57,9 @@ import AboutTimeline from '../components/blocks/about/AboutTimeline.vue';
 .about-path {
   @apply text-gray-200;
 }
-.about-intro {
+/* .about-intro {
   @apply pb-4;
-}
+} */
 .about-cta {
   @apply bg-gradient-primary py-6 my-6;
 }
