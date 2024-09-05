@@ -2,14 +2,14 @@
 // import TheWelcome from '../components/TheWelcome.vue'
 import { ref, onMounted } from "vue";
 
-import { gsap } from "gsap";
+// import { gsap } from "gsap";
 
 const isVisible = ref(true)
 
 onMounted(() => {
   setTimeout(() => {
     isVisible.value = false
-  }, 8000);
+  }, 8500);
 })
 </script>
 
@@ -19,9 +19,6 @@ onMounted(() => {
       <text x="50%" y="50%" dy="1rem" text-anchor="middle">
         Maj Drab
       </text>
-      <!-- <text x="50%" y="50%" dy="1rem" text-anchor="middle">
-        Maj Drab
-      </text> -->
     </svg>
   </div>
 </template>
@@ -29,12 +26,12 @@ onMounted(() => {
 <style scoped>
 .opening-animation {
   @apply fixed inset-0 grid place-content-center bg-transparent z-50 overflow-hidden;
-  animation: 8s remove-animation;
+  animation: 8s remove-animation forwards;
 
   svg {
     @apply w-[700px];
     text {
-      @apply stroke-[2px] fill-spot text-[10rem] font-bold tracking-tighter;
+      @apply stroke-[2px] fill-green-300 text-[10rem] font-bold tracking-tighter;
       animation: 5s  animate-stroke;
     }
   }
@@ -60,7 +57,7 @@ onMounted(() => {
     stroke-dashoffset: 25%;
     stroke-dasharray: 0 32%;
     fill: transparent;
-    stroke: theme('colors.spot.DEFAULT');
+    stroke: theme('colors.green.300');
   }
   80% {
     fill: transparent;
@@ -68,8 +65,8 @@ onMounted(() => {
   90% {
     stroke-dashoffset: 0;
     stroke-dasharray: 32% 0;
-    fill: theme('colors.spot.DEFAULT');
-    stroke: theme('colors.spot.DEFAULT');
+    fill: theme('colors.green.300');
+    stroke: theme('colors.green.300');
   }
   100% {
     stroke: transparent;
