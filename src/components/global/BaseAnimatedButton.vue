@@ -43,7 +43,7 @@ defineExpose({
       <div ref="animatedEllipse" class="animated-ellipse bg-green-400/70">
         <div class="bg-green-400"></div>
       </div>
-      <span class="relative"><slot></slot></span>
+      <span class="relative text-gray-200"><slot></slot></span>
     </div>
   </button>
 </template>

@@ -35,7 +35,7 @@ aboutTimelineData.forEach(el => {
 const button = ref(null)
 function animateButton() {
   if(button.value) {
-    console.log(button.value[displayId.value].baseAnimatedButton)
+    // console.log(button.value[displayId.value].baseAnimatedButton)
     aboutTimelineData.forEach(el => {
       gsap.to(button.value[el.id].baseAnimatedButton, {backgroundColor: theme.colors.green.DEFAULT, duration: 0})
     });
