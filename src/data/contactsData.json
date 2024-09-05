@@ -1,5 +1,10 @@
 [
   {
+    "href": "mailto:maj.drab@gmail.com",
+    "title": "Email me",
+    "icon": "mail"
+  },
+  {
     "href": "https://www.linkedin.com/in/maj-drab-891a1041/",
     "title": "LinkedIn",
     "icon": "linkedin"
