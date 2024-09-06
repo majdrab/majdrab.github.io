@@ -24,11 +24,16 @@ import AboutTimeline from '../components/blocks/about/AboutTimeline.vue';
         </div>
       </div>
     </BaseContainer>
+    
+    <BaseContainer class="about-path">
+      <h3 class="text-gray-100">My Programming Path</h3>
+      <AboutTimeline />
+    </BaseContainer>
     <BaseContainer isFull class="about-cta">
       <BaseContainer innerClass="flex flex-col items-center justfy-center">
       <h2 class="pb-2 text-gray-100">I'm actively seeking new opportunities as a Front-end Developer</h2>
       <h4 class="pb-3">Check out my CV to learn more about my skills and experience.</h4>
-      <div class="flex gap-10">
+      <div class="flex gap-16">
         <a href="/cv/DrabMajCV_2024_eng.pdf" target="_blank" >
           <BaseAnimatedButton class="px-[18px] py-[9px] rounded-[46px]">
             <span class="">ENG</span>
@@ -42,10 +47,6 @@ import AboutTimeline from '../components/blocks/about/AboutTimeline.vue';
       </div>
     </BaseContainer>
     </BaseContainer>
-    <BaseContainer class="about-path">
-      <h3 class="text-gray-100">My Programming Path</h3>
-      <AboutTimeline />
-    </BaseContainer>
   </section>
 </template>
 
@@ -58,11 +59,11 @@ import AboutTimeline from '../components/blocks/about/AboutTimeline.vue';
 .about-path {
   @apply text-gray-200;
 }
-/* .about-intro {
-  @apply pb-4;
-} */
+.about-intro {
+  @apply pb-6;
+}
 .about-cta {
-  @apply bg-gradient-primary py-6 my-6;
+  @apply bg-gradient-primary py-6 mt-6;
 }
 .about-path {
   .about-path__timeline {

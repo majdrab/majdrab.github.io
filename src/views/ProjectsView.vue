@@ -27,6 +27,6 @@ import SingleProject from '../components/blocks/projects/SingleProject.vue';
 
 <style scoped>
 #projects {
-  @apply pt-8 pb-14 relative bg-primary;
+  @apply pt-6 pb-14 relative bg-primary;
 }
 </style>
