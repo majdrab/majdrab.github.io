@@ -4,6 +4,10 @@ import { ref, onMounted } from "vue";
 
 // import { gsap } from "gsap";
 
+// const tl = gsap.timeline({})
+
+
+
 const isVisible = ref(true)
 
 onMounted(() => {
@@ -15,8 +19,8 @@ onMounted(() => {
 
 <template>
   <div class="opening-animation" v-if="isVisible">
-    <svg viewBox="0 0 700 200">
-      <text x="50%" y="50%" dy="1rem" text-anchor="middle">
+    <svg class="opening-animation__svg" viewBox="0 0 700 200">
+      <text class="opening-animation__svg-text" x="50%" y="50%" dy="1rem" text-anchor="middle">
         Maj Drab
       </text>
     </svg>
