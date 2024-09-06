@@ -11,22 +11,23 @@ import AboutTimeline from '../components/blocks/about/AboutTimeline.vue';
       <BaseDivider />
       <div class="grid grid-cols-6 gap-4 pt-2">
         <div class="bg-green px-5 py-5 rounded row-start-1 col-start-1 col-span-6 lg:col-span-4">
-          <p class="">I'm Maj Drab, a 29-year-old Slovenian junior Front-end developer. Currently in the process of gaining more programming knowledge with the help of online courses.</p>
+          <p class="">I'm Maj Drab, a 29-year-old Junior Front-end Developer from Slovenia, currently focused on expanding my programming knowledge through online courses.</p>
         </div>
         <div class="bg-green px-5 py-5 rounded rounded-tr-3xl row-start-1 col-start-6 col-span-1 max-lg:hidden"></div>
         <div class="bg-green-400 px-5 py-5 rounded row-start-2 col-start-1 col-span-6 lg:col-start-3 lg:col-span-4">
-          <p class="">I like to resolve design problems, create smart user interface and imagine useful interaction, developing rich web experiences & web applications.</p>
+          <p class="">I have a passion for solving design challenges, crafting intuitive user interfaces, and creating engaging interactions to develop rich web experiences and applications.</p>
         </div>
-        <div class="bg-green-300 px-5 py-5 rounded rounded-bl-3xl row-start-2 row-span-2 col-start-1 col-span-1 max-lg:hidden"></div>
+        <div class="bg-green-400 px-5 py-5 rounded row-start-2 col-start-1 col-span-1 max-lg:hidden"></div>
+        <!-- <div class="bg-green-300 px-5 py-5 rounded rounded-bl-3xl row-start-2 row-span-2 col-start-1 col-span-1 max-lg:hidden"></div> -->
         <div class="bg-green-300 px-5 py-5 rounded row-start-3 col-start-1 col-span-6 lg:col-start-2 lg:col-span-4">
-          <p class="">When not working or futzing around with code, I love to play D&D, video and board games, go to music festivals or simply enjoy a walk in the woods.</p>
+          <p class="">Outside of coding, I love playing D&D, video and board games, attending music festivals, or simply taking a walk in the woods.</p>
         </div>
       </div>
     </BaseContainer>
     <BaseContainer isFull class="about-cta">
       <BaseContainer innerClass="flex flex-col items-center justfy-center">
-      <h2 class="pb-2 text-gray-100">I'm actively looking for a job.</h2>
-      <h4 class="pb-3">Check out my CV</h4>
+      <h2 class="pb-2 text-gray-100">I'm actively seeking new opportunities as a Front-end Developer</h2>
+      <h4 class="pb-3">Check out my CV to learn more about my skills and experience.</h4>
       <div class="flex gap-10">
         <a href="/cv/DrabMajCV_2024_eng.pdf" target="_blank" >
           <BaseAnimatedButton class="px-[18px] py-[9px] rounded-[46px]">
