@@ -1,5 +1,4 @@
 <script setup>
-// import TheWelcome from '../components/TheWelcome.vue'
 import { ref, onMounted } from "vue";
 
 import resolveConfig from 'tailwindcss/resolveConfig'
@@ -26,7 +25,7 @@ onMounted(() => {
       ease: "power2.inOut",
     })
     .to(".opening-animation__svg-text", {
-      fill: theme.colors.green.DEFAULT,
+      fill: theme.colors.green[300],
       duration: 1,
       stroke: "transparent"
     }, "-=1")
