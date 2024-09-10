@@ -64,6 +64,7 @@ export default {
       // primary gradient
       primary: {
         DEFAULT: '#151736',
+        transparent: '#15173600',
         '400': '#3E3D60',
         '300': '#6B688E',
         '200': '#9A96BF',
@@ -198,9 +199,10 @@ export default {
           transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
           transitionDuration: '0.3s',
         },
-        // '.gradient-1': {
-        //   background: `linear-gradient(89deg, ${theme(colors.primary,20)}, ${theme(colors.link.default)})`
-        // },
+        '.stroke-animate': {
+          strokeDashoffset: '25%',
+          strokeDasharray: '0 32%',
+        },
       })
     }),
   ]

@@ -2,19 +2,45 @@
 // import TheWelcome from '../components/TheWelcome.vue'
 import { ref, onMounted } from "vue";
 
-// import { gsap } from "gsap";
+import resolveConfig from 'tailwindcss/resolveConfig'
+import tailwindConfig from '../../tailwind.config'
 
-// const tl = gsap.timeline({})
+const { theme } = resolveConfig(tailwindConfig)
 
+import { gsap } from "gsap";
 
-
-const isVisible = ref(true)
+const isVisible = ref(true);
 
 onMounted(() => {
-  setTimeout(() => {
-    isVisible.value = false
-  }, 8500);
-})
+  const tl = gsap.timeline({
+    onComplete: () => {
+      isVisible.value = false;
+    }
+  });
+
+  // GSAP animations
+  tl.to(".opening-animation__svg-text", {
+      strokeDashoffset: 0,
+      strokeDasharray: "32% 0",
+      duration: 4,
+      ease: "power2.inOut",
+    })
+    .to(".opening-animation__svg-text", {
+      fill: theme.colors.green.DEFAULT,
+      duration: 1,
+      stroke: "transparent"
+    }, "-=1")
+    .to(".opening-animation", {
+      backgroundColor: theme.colors.primary.transparent,
+      duration: 1,
+      ease: "power1.inOut"
+    }, "=0.5")
+    .to(".opening-animation", {
+      transform: "translateY(-100vh)",
+      duration: 0.5,
+      ease: "back.in"
+    });
+});
 </script>
 
 <template>
@@ -29,51 +55,12 @@ onMounted(() => {
 
 <style scoped>
 .opening-animation {
-  @apply fixed inset-0 grid place-content-center bg-transparent z-50 overflow-hidden;
-  animation: 8s remove-animation forwards;
-
+  @apply fixed inset-0 grid place-content-center bg-primary z-50 overflow-hidden;
   svg {
-    @apply w-[700px];
+    @apply w-[700px] max-w-[80vw];
     text {
-      @apply stroke-[2px] fill-green-300 text-[10rem] font-bold tracking-tighter;
-      animation: 5s  animate-stroke;
+      @apply stroke-[2px] stroke-animate stroke-green-300 fill-transparent text-[10rem] font-bold tracking-tighter;
     }
-  }
-}
-
-@keyframes remove-animation {
-  0% {
-    background-color: theme('colors.primary.DEFAULT');
-  }
-  70% {
-    background-color: theme('colors.primary.DEFAULT');
-  }
-  95% {
-    background-color: transparent;
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes animate-stroke {
-  0% {
-    stroke-dashoffset: 25%;
-    stroke-dasharray: 0 32%;
-    fill: transparent;
-    stroke: theme('colors.green.300');
-  }
-  80% {
-    fill: transparent;
-  }
-  90% {
-    stroke-dashoffset: 0;
-    stroke-dasharray: 32% 0;
-    fill: theme('colors.green.300');
-    stroke: theme('colors.green.300');
-  }
-  100% {
-    stroke: transparent;
   }
 }
 </style>
